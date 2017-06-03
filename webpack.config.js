@@ -23,7 +23,7 @@ if (process.env.COMPRESS) {
 plugins.push(packCSS)
 
 module.exports = {
-    entry: ["./src/index.js"],
+    entry: ["./src/index.js", "./src/assets/style/index.less"],
 
     output: {
         path: path.join(__dirname, "/dist/"),

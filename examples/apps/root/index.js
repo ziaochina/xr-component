@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import {AppLoader} from 'xr-app-loader'
-import { Menu, Icon } from 'antd';
+import { Icon } from 'antd';
+import {Menu} from 'xr-component'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 import './style.less'

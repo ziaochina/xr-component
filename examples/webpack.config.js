@@ -21,6 +21,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.css$/,
+            exclude: /node_modules/,
             use: [{
                 loader: 'style-loader'
             }, {
@@ -28,6 +29,7 @@ module.exports = {
             }]
         }, {
             test: /\.less$/,
+            exclude: /node_modules/,
             use: [{
                 loader: 'style-loader'
             }, {
