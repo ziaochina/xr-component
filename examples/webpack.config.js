@@ -21,7 +21,8 @@ module.exports = {
     module: {
         rules: [{
             test: /\.css$/,
-            exclude: /node_modules/,
+            //exclude: /node_modules/,
+            include:/xr-component/,
             use: [{
                 loader: 'style-loader'
             }, {

@@ -1,6 +1,7 @@
 var webpack = require("webpack");
 var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var packCSS = new ExtractTextPlugin('./style.min.css');
 
 var plugins = [
@@ -22,8 +23,15 @@ if (process.env.COMPRESS) {
 
 plugins.push(packCSS)
 
+
+plugins.push(new CopyWebpackPlugin([{
+    context: './src/assets',
+    from: '**/*',
+    to: 'assets'
+}]))
+
 module.exports = {
-    entry: ["./src/index.js", "./src/assets/style/index.less"],
+    entry: ["./src/index.js"],
 
     output: {
         path: path.join(__dirname, "/dist/"),
@@ -45,7 +53,7 @@ module.exports = {
             test: /\.(less|css)$/,
             exclude: /node_modules/,
             use: ExtractTextPlugin.extract({
-                use: [{loader:'css-loader', options:{ minimize: true}}, 'less-loader'],
+                use: [{ loader: 'css-loader', options: { minimize: true } }, 'less-loader'],
                 fallback: 'style-loader',
             }),
         }, {
