@@ -1,12 +1,12 @@
 var webpack = require("webpack");
 var path = require("path");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require("extract-text-webpack-plugin")
+
 //const marked = require("marked")
 //const renderer = new marked.Renderer()
 
 module.exports = {
-    devtool: 'source-map',
+    //devtool: 'source-map',
     entry: ["./index.js"],
 
     output: {
@@ -60,6 +60,15 @@ module.exports = {
             filename: './index.html', //生成的html存放路径，相对于 path
             template: './index.html', //html模板路径
             inject: true, //允许插件修改哪些内容，包括head与body`
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true,
+            sourceMap:false,
+            compressor: {
+                drop_debugger: true,
+                warnings: false,
+                drop_console: true
+            }
         })
     ]
 };
