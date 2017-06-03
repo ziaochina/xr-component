@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --colors --watch --compress --content-base ./dist  --port 8089 --host 0.0.0.0",
+    "compile": "babel -d lib/ src/", 
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

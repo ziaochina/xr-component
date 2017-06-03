@@ -5,9 +5,9 @@ import { Provider, connect } from 'react-redux'
 import { Map } from 'immutable'
 import { AppLoader, appMiddleware, reducer } from 'xr-app-loader'
 import apps from './apps'
-import './styles/markdown.css'
-import './styles/hljs.css'
-import './styles/index.less'
+import './assets/style/markdown.css'
+import './assets/style/hljs.css'
+import './assets/style/index.less'
 
 const middleware = [appMiddleware(apps)]
 

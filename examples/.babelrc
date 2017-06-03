@@ -7,6 +7,6 @@
   "plugins": [
     "transform-runtime",
     "add-module-exports",
-    ["import", { libraryName: "antd", style: true }],
+    ["import", { libraryName: "antd" }],
   ]
 }
