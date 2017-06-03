@@ -8,7 +8,7 @@ import apps from './apps'
 import './assets/style/markdown.css'
 import './assets/style/hljs.css'
 import './assets/style/index.less'
-import 'xr-component/assets/style.less'
+
 
 const middleware = [appMiddleware(apps)]
 

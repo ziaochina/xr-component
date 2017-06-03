@@ -21,8 +21,8 @@ module.exports = {
     module: {
         rules: [{
             test: /\.css$/,
-            //exclude: /node_modules/,
-            include:/xr-component/,
+            exclude: /node_modules/,
+            
             use: [{
                 loader: 'style-loader'
             }, {
@@ -30,7 +30,7 @@ module.exports = {
             }]
         }, {
             test: /\.less$/,
-            exclude: /node_modules/,
+           // exclude: /node_modules/,
             use: [{
                 loader: 'style-loader'
             }, {
@@ -52,6 +52,15 @@ module.exports = {
                 loader: "markdown-loader",
                 
             }]
+        },{
+            test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif|mp4|webm)(\?\S*)?$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                }
+            }
         }],
     },
 
@@ -64,7 +73,7 @@ module.exports = {
             template: './index.html', //html模板路径
             inject: true, //允许插件修改哪些内容，包括head与body`
         }),
-        new webpack.optimize.UglifyJsPlugin({
+        /*new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             sourceMap:false,
             compressor: {
@@ -72,6 +81,6 @@ module.exports = {
                 warnings: false,
                 drop_console: true
             }
-        })
+        })*/
     ]
 };
