@@ -1,2 +1,0 @@
-# xr-component
-xr-component
