@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "antd": "^2.10.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
