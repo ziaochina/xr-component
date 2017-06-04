@@ -54,7 +54,7 @@ module.exports = {
             }]
         },{
             test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif|mp4|webm)(\?\S*)?$/,
-            exclude: /node_modules/,
+            //exclude: /node_modules/,
             use: {
                 loader: 'file-loader',
                 options: {

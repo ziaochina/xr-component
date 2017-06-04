@@ -31,7 +31,7 @@ plugins.push(new CopyWebpackPlugin([{
 }]))
 
 module.exports = {
-    entry: ["./src/index.js"],
+    entry: ["./src/index.js","./src/assets/style/index.less"],
 
     output: {
         path: path.join(__dirname, "/dist/"),
@@ -53,7 +53,7 @@ module.exports = {
             test: /\.(less|css)$/,
             exclude: /node_modules/,
             use: ExtractTextPlugin.extract({
-                use: [{ loader: 'css-loader', options: { minimize: true } }, 'less-loader'],
+                use: [{ loader: 'css-loader', options: { minimize: false } }, 'less-loader'],
                 fallback: 'style-loader',
             }),
         }, {
@@ -66,7 +66,7 @@ module.exports = {
             use: {
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]',
+                    name: '[name].[hash:8].[ext]',
                 }
             }
         }],
