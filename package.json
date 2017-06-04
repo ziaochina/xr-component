@@ -1,13 +1,13 @@
 {
   "name": "xr-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "./lib/index",
   "scripts": {
     "build": "set NODE_ENV=production && webpack --output-filename xr-component.js",
     "build-min": "set NODE_ENV=production && set COMPRESS=1 && webpack --output-filename xr-component.min.js",
     "compile": "babel -d lib/ src/",
-    "prepublish": "npm run compile && npm run build-min",
+    "prepublish": "npm run compile && npm ru build-min",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

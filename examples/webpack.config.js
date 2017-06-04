@@ -11,7 +11,7 @@ module.exports = {
 
     output: {
         path: path.join(__dirname, "/dist/"),
-        filename: '[name].bundle.js'
+        filename: '[name].[hash:8].bundle.js'
     },
 
     resolve: {
@@ -58,7 +58,7 @@ module.exports = {
             use: {
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]',
+                    name: '[name].[hash:8].[ext]',
                 }
             }
         }],

@@ -20,7 +20,7 @@
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "xr-app-loader": "^1.0.5",
-    "xr-component": "0.0.5"
+    "xr-component": "^0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
