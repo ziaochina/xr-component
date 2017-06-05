@@ -1,4 +1,3 @@
-```javascript
 import React,{Component} from 'react'
 import { Menu, Icon } from 'xr-component'
 const SubMenu = Menu.SubMenu
@@ -47,4 +46,3 @@ export default class Example1 extends Component {
     )
   }
 }
-```

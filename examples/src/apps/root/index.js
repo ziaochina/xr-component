@@ -42,6 +42,7 @@ export default class RootComponent extends Component{
 			 	<Menu.Item key="about" >关于</Menu.Item>
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
+		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="Layout">Layout 布局</Menu.Item>
 		            <Menu.Item key="button">Button 按钮</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>
@@ -52,8 +53,6 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="link">Link 链接</Menu.Item>
 		            <Menu.Item key="tabs">Tabs 页签</Menu.Item>
 		            <Menu.Item key="tree">Tree 树</Menu.Item>
-		            <Menu.Item key="menu">Menu 菜单</Menu.Item>
-
 		        </SubMenu>
      		</Menu>
 	    )

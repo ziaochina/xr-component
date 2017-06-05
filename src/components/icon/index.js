@@ -1,6 +1,11 @@
 import React from 'react'
 import {Icon} from 'antd'
+import classNames from 'classnames'
 
 export default function IconComponent(props){
-	return <Icon {...props} className='xr-icon' />
+	let className = {
+		'xr-icon' :true,
+		[props.className] : !!props.className
+	}
+	return <Icon {...props} className={className} />
 }

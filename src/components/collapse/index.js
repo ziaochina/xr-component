@@ -1,8 +1,13 @@
 import React from 'react'
 import {Collapse} from 'antd'
+import classNames from 'classnames'
 
 function CollapseComponent(props){
-	return <Collapse {...props} className='xr-collapse' />
+	let className = {
+		'xr-collapse' :true,
+		[props.className] : !!props.className
+	}
+	return <Collapse {...props} className={className} />
 }
 
 CollapseComponent.Panel = Collapse.Panel

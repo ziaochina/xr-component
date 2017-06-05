@@ -1,8 +1,13 @@
 import React from 'react'
 import {Menu} from 'antd'
+import classNames from 'classnames'
 
 function MenuComponent(props){
-	return <Menu {...props} className='xr-menu' />
+	let className = {
+		'xr-menu' :true,
+		[props.className] : !!props.className
+	}
+	return <Menu {...props} className={className} />
 }
 
 MenuComponent.Divider = Menu.Divider
