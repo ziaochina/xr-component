@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import {AppLoader} from 'xr-app-loader'
-import { Icon } from 'antd';
-import {Menu} from 'xr-component'
+import {Icon, Menu} from 'xr-component'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 import './style.less'
@@ -15,13 +14,21 @@ export default class RootComponent extends Component{
     	this.props.setCurrentAppPath(`apps/${e.key}`)
     }
 
-   
+    handleGithubClick(){
+    	window.open("https://github.com/ziaochina/xr-component/tree/master")
+    }
+
 	render(){
 		let currentAppPath = this.props.payload.get('currentAppPath')
 		return(
 			<div className='app-root'>
 				<div className='app-root-header'>
-					<h1>xr-componnet</h1>
+					<div className='app-root-header-left'> 
+						<h1>xr-componnet</h1>
+					</div>
+					<div className='app-root-header-right'> 
+						<Icon type='github' onClick={::this.handleGithubClick}/>
+					</div>
 				</div>
 				<div className='app-root-content'>
 					<div className='app-root-content-left'>
@@ -42,6 +49,7 @@ export default class RootComponent extends Component{
 			 	<Menu.Item key="about" >关于</Menu.Item>
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
+		        	<Menu.Item key="icon">Icon 图标</Menu.Item>
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
