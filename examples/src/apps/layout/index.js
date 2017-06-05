@@ -10,7 +10,6 @@ import readmeMd from './md/readme.md'
 
 export default class LayoutDemo extends Component{
 	render(){
-		debugger
 		return (
 			<div>
 				<Example 
