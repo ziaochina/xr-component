@@ -8,12 +8,12 @@ import Example1 from './example/example1'
 import readmeMd from './md/readme.md'
 
 
-export default class MenuDemo extends Component{
+export default class CardDemo extends Component{
 	render(){
 		return (
 			<div>
 				<Example 
-			 		title = '示例一：垂直菜单'
+			 		title = '示例一：折叠面包'
 			 		content={<Example1 />}
 			 		doc={example1Md} 
 				/>

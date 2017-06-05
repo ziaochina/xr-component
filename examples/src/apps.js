@@ -13,4 +13,16 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/menu'){
     	cb(require('./apps/menu/index'))
     }
+
+    else if(path === 'apps/card'){
+    	cb(require('./apps/card/index'))
+    }
+
+    else if(path === 'apps/icon'){
+    	cb(require('./apps/icon/index'))
+    }
+
+    else if(path === 'apps/collapse'){
+    	cb(require('./apps/collapse/index'))
+    }
 }

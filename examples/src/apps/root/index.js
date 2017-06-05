@@ -43,6 +43,8 @@ export default class RootComponent extends Component{
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
+		        	<Menu.Item key="card">Card 卡片</Menu.Item>
+		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
 		        	<Menu.Item key="Layout">Layout 布局</Menu.Item>
 		            <Menu.Item key="button">Button 按钮</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>

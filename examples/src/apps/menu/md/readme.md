@@ -2,7 +2,9 @@
 
 该组件来源于antd menu，为页面和功能提供导航的菜单列表。
 
-## API
+[详情请点击查看官方](https://ant.design/components/menu-cn/)
+
+## antd Menu API
 
 ### Menu props
 
@@ -52,4 +54,3 @@
 
 ### 详细API
 
-参考[antd menu](https://ant.design/components/menu-cn/)
