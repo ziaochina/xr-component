@@ -1,6 +1,10 @@
 import React from 'react'
 import {Collapse} from 'antd'
 
-export default function CollapseComponent(props){
+function CollapseComponent(props){
 	return <Collapse {...props} className='xr-collapse' />
 }
+
+CollapseComponent.Panel = Collapse.Panel
+
+export default CollapseComponent
