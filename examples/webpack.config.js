@@ -6,7 +6,7 @@ const marked = require("marked")
 const renderer = new marked.Renderer()
 
 module.exports = {
-    //devtool: 'source-map',
+    devtool: 'source-map',
     entry: ["./src/index.js"],
 
     output: {

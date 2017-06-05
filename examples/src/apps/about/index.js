@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import aboutMd from './md/about.md'
-import {Button, Icon} from 'antd'
-
+import {Button} from 'antd'
+import {Icon} from 'xr-component'
 export default class About extends Component{
 	render(){
 		return (
