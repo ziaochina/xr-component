@@ -1,17 +1,26 @@
 import React,{Component} from 'react'
-import md from './md/readme.md'
+import readmeMd from './md/readme.md'
+import example1Md from './md/example1.md'
+
 import {Icon, Card, Menu} from 'xr-component'
 
+import Example from '../../components/example'
+
 const SubMenu = Menu.SubMenu
-const MenuItemGroup = Menu.MenuItemGroup
+const MenuItemGroup = Menu.ItemGroup
 
 export default class MenuDemo extends Component{
 	render(){
-		return this.renderExample1()
+		return (
+			<div>
+				{this.renderExample1()}
+				{this.renderMarkdown(readmeMd)}
+			</div>
+		) 
 	}
 
 	renderExample1(){
-		let menu = 
+		let menu = (
 		 	<Menu
 		        style={{ width: 240 }}
 		        defaultSelectedKeys={['1']}
@@ -42,20 +51,22 @@ export default class MenuDemo extends Component{
 		          <Menu.Item key="11">Option 11</Menu.Item>
 		          <Menu.Item key="12">Option 12</Menu.Item>
 		        </SubMenu>
-		      </Menu>
+		      </Menu>)
 
 
-		 return this.renderExample ( '典型菜单', menu, md )
+		 return (
+		 	<Example 
+			 	title = '示例一：垂直菜单'
+			 	content={menu}
+			 	doc={example1Md} 
+			/>
+		 )
 	}
 
-	renderExample(title, ele, md){
+
+	renderMarkdown(md){
 		return (
-			<div>
-				<Card title={title}>
-					{ele}
-					<div className='markdown-body' dangerouslySetInnerHTML={{__html: md}}>
-					</div>
-				</Card>
+			<div className='markdown-body' dangerouslySetInnerHTML={{__html: md}}>
 			</div>
 		)
 	}
