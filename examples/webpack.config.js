@@ -6,7 +6,7 @@ const marked = require("marked")
 const renderer = new marked.Renderer()
 
 module.exports = {
-    //devtool: 'source-map',
+    devtool: 'source-map',
     entry: ["./src/index.js"],
 
     output: {
@@ -74,7 +74,7 @@ module.exports = {
             template: './src/index.html', //html模板路径
             inject: true, //允许插件修改哪些内容，包括head与body`
         }),
-        new webpack.optimize.UglifyJsPlugin({
+        /*new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             sourceMap:false,
             compressor: {
@@ -82,6 +82,6 @@ module.exports = {
                 warnings: false,
                 drop_console: true
             }
-        })
+        })*/
     ]
 };

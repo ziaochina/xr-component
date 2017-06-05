@@ -8,3 +8,4 @@ export const Menu = MenuComponent
 export const Icon = IconComponent
 export const Card = CardComponent
 export const Collapse = CollapseComponent
+export const Layout = LayoutComponent

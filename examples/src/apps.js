@@ -25,4 +25,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/collapse'){
     	cb(require('./apps/collapse/index'))
     }
+
+    else if(path === 'apps/layout'){
+    	cb(require('./apps/layout/index'))
+    }
 }
