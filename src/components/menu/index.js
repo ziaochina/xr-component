@@ -2,7 +2,7 @@ import React from 'react'
 import {Menu} from 'antd'
 
 function MenuComponent(props){
-	return <Menu {...props} />
+	return <Menu {...props} className='xr-menu' />
 }
 
 MenuComponent.Divider = Menu.Divider

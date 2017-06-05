@@ -2,12 +2,12 @@ var webpack = require("webpack");
 var path = require("path");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-//const marked = require("marked")
-//const renderer = new marked.Renderer()
+const marked = require("marked")
+const renderer = new marked.Renderer()
 
 module.exports = {
     //devtool: 'source-map',
-    entry: ["./index.js"],
+    entry: ["./src/index.js"],
 
     output: {
         path: path.join(__dirname, "/dist/"),
@@ -50,6 +50,7 @@ module.exports = {
               loader:"highlight-loader"
             },{
                 loader: "markdown-loader",
+                options:{renderer}
                 
             }]
         },{
@@ -70,7 +71,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: './index.html', //生成的html存放路径，相对于 path
-            template: './index.html', //html模板路径
+            template: './src/index.html', //html模板路径
             inject: true, //允许插件修改哪些内容，包括head与body`
         }),
         /*new webpack.optimize.UglifyJsPlugin({

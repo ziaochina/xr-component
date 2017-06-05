@@ -12,10 +12,7 @@ export default class RootComponent extends Component{
 
 
     handleMenuClick(e){
-    	switch(e.key){
-    		case "about":
-    			this.props.setCurrentAppPath('apps/about')
-    	}
+    	this.props.setCurrentAppPath(`apps/${e.key}`)
     }
 
    

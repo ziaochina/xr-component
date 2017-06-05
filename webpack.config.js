@@ -53,7 +53,7 @@ module.exports = {
             test: /\.(less|css)$/,
             exclude: /node_modules/,
             use: ExtractTextPlugin.extract({
-                use: [{ loader: 'css-loader', options: { minimize: false } }, 'less-loader'],
+                use: [{ loader: 'css-loader', options: { minimize: true } }, 'less-loader'],
                 fallback: 'style-loader',
             }),
         }, {
