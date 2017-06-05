@@ -1,19 +1,8 @@
-为页面和功能提供导航的菜单列表。
+# Menu 菜单
 
-## 何时使用
+该组件来源于antd menu，为页面和功能提供导航的菜单列表。
 
-导航菜单是一个网站的灵魂，用户依赖导航在各个页面中进行跳转。一般分为顶部导航和侧边导航，顶部导航提供全局性的类目和功能，侧边导航提供多级结构来收纳和排列网站架构。
-
-更多布局和导航的范例可以参考：[常用布局](/docs/spec/layout)。
-
-```html
-<Menu>
-  <Menu.Item>菜单项</Menu.Item>
-  <SubMenu title="子菜单">
-    <Menu.Item>子菜单项</Menu.Item>
-  </SubMenu>
-</Menu>
-```
+## 示例
 
 ## API
 
@@ -34,8 +23,6 @@
 | style | 根节点样式 | object | - |
 | inlineIndent | inline 模式的菜单缩进宽度 | number | 24 |
 | multiple | 是否允许多选 | boolean | false |
-
-> More options in [rc-menu](https://github.com/react-component/menu#api)
 
 ### Menu.Item props
 
@@ -64,3 +51,7 @@
 ### Menu.Divider
 
 菜单项分割线，只用在弹出菜单内。
+
+### 详细API
+
+参考[antd menu](https://ant.design/components/menu-cn/)
