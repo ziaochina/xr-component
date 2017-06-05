@@ -3,10 +3,10 @@ import {Collapse} from 'antd'
 import classNames from 'classnames'
 
 function CollapseComponent(props){
-	let className = {
+	let className = classNames({
 		'xr-collapse' :true,
 		[props.className] : !!props.className
-	}
+	})
 	return <Collapse {...props} className={className} />
 }
 

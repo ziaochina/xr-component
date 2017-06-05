@@ -3,10 +3,10 @@ import {Menu} from 'antd'
 import classNames from 'classnames'
 
 function MenuComponent(props){
-	let className = {
+	let className = classNames({
 		'xr-menu' :true,
 		[props.className] : !!props.className
-	}
+	})
 	return <Menu {...props} className={className} />
 }
 
