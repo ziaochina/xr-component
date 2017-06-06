@@ -20,12 +20,33 @@
         color:@btn-primary-bg;
   	}
 
-  	&:hover{
+  	&:hover:before{
   		cursor: pointer;
-        background-color: ~`colorPalette("@{btn-primary-bg}", 5)`;
+        color: ~`colorPalette("@{btn-primary-bg}", 5)`;
     }
 }
 
+.xricon--default{
+	&:before {
+        color:@btn-default-color ;
+  	}
+
+  	&:hover:before{
+  		cursor: pointer;
+        color: ~`colorPalette("@{btn-default-color}", 5)`;
+    }
+}
+
+.xricon--disabled{
+	&:before {
+        color:@btn-disable-color ;
+  	}
+
+  	&:hover:before{
+  		cursor: pointer;
+        color: ~`colorPalette("@{btn-disable-color}", 5)`;
+    }
+}
 
 .xricon{
     &:before {
