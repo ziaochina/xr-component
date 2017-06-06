@@ -17,23 +17,23 @@
 
 .xricon--primary{
 	&:before {
-        color:@btn-primary-bg;
+        color:@icon-primary;
   	}
 
   	&:hover:before{
   		  cursor: pointer;
-        color: ~`colorPalette("@{btn-primary-bg}", 5)`;
+        color: ~`colorPalette("@{icon-primary}", 5)`;
     }
 }
 
-.xricon--default{
-	&:before {
-        color:@text-color ;
+.xricon--normal{
+	  &:before {
+        color:@icon-normal ;
   	}
 
   	&:hover:before{
   		  cursor: pointer;
-        color: ~`colorPalette("@{text-color}", 5)`;
+        color: ~`colorPalette("@{icon-normal}", 5)`;
     }
 }
 
