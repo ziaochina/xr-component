@@ -1,49 +1,41 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import classNames from 'classnames'
 
-export default function LayoutComponent(props) {
-    let {
-        className,
-        style,
-        width,
-        height,
-        direction,
-        justifyContent,
-        alignItems,
-        ...others
-    } = props
+export default function LayoutComponent(props){
+    let {  className, style, width, 
+	    	height, direction, justifyContent, 
+	    	alignItems, ...others } = props
 
-    className = classNames({
-        'xr-layout': true,
-        [className]: !!className
+    className = classNames( {
+      	'xr-layout': true,
+      	[className] : !!className
     })
 
-    style = style || {}
+     style = style || {}
 
-    if (width) {
-        style.flex = `0 0 ${width}px`
-        style.width = `${width}px`
+    if(width){
+    	style.flex = `0 0 ${width}px`
+    	style.width = `${width}px`
     }
 
-    if (height) {
-        style.flex = `0 0 ${height}px`
-        style.height = `${height}px`
+    if(height){
+    	style.flex = `0 0 ${height}px`
+    	style.height = `${height}px`
     }
 
-    if (direction) {
-        style.flexDirection = direction
+    if(direction){
+    	style.flexDirection = direction
     }
 
-    style.justifyContent = justifyContent
+    style.justifyContent = justifyContent 
 
-    if (alignItems) {
-        style.alignItems = alignItems
+    if(alignItems){
+    	style.alignItems = alignItems
     }
 
 
-    return ( < div {...others }
-        className = { className }
-        style = { style } > < /div>
+   	return (
+      	<div {...others} className={className} style={style} />
     )
 
 }
