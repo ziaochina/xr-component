@@ -1,0 +1,294 @@
+@font-face {font-family: "anticon";
+  src: url('../font/ant/iconfont.eot?t=1474179087'); /* IE9*/
+  src: url('../font/ant/iconfont.eot?t=1474179087#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/ant/iconfont.woff?t=1474179087') format('woff'), /* chrome, firefox */
+  url('../font/ant/iconfont.ttf?t=1474179087') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/ant/iconfont.svg?t=1474179087#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+    font-family: 'xricon';
+    src: url('../font/xr/iconfont.eot'); /* IE9*/
+    src: url('../font/xr/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/xr/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/xr/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/xr/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.xricon--primary{
+	&:before {
+        color:@btn-primary-bg;
+  	}
+
+  	&:hover:before{
+  		  cursor: pointer;
+        color: ~`colorPalette("@{btn-primary-bg}", 5)`;
+    }
+}
+
+.xricon--default{
+	&:before {
+        color:@text-color ;
+  	}
+
+  	&:hover:before{
+  		  cursor: pointer;
+        color: ~`colorPalette("@{text-color}", 5)`;
+    }
+}
+
+.xricon--disabled{
+	  &:before {
+        color:@disabled-color ;
+  	}
+
+  	&:hover:before{
+  		  cursor: not-allowed;
+    }
+}
+
+.xricon{
+    &:before {
+    	font-family: "xricon" !important;
+  	}
+}
+
+.xricon-customer:before { content: "\e603"; } //客户管理
+
+.xricon-financial:before { content: "\e600"; } //财务核算
+
+.xricon-payroll:before { content: "\e644"; } //工资单
+
+.xricon-prediction:before { content: "\e6da"; } //经营预测
+
+.xricon-send-work-manager:before { content: "\e606"; } //派工管理
+
+.xricon-water-account:before { content: "\e605"; } //流水账
+
+.xricon-charge-manager:before { content: "\e607"; } //收费管理
+
+.xricon-certificate:before { content: "\e649"; } //凭证
+
+.xricon-taxation:before { content: "\e608"; } //税务管理
+
+.xricon-report:before { content: "\e609"; } //统计报表
+
+.xricon-setting:before { content: "\e60a"; } //系统设置
+
+.xricon-account-book:before { content: "\e6e4"; } //账簿
+
+.xricon-play-video:before { content: "\e710"; } //播放视频
+
+.xricon-help:before { content: "\e63d"; } //帮助
+
+.xricon-query:before { content: "\e601"; } //查询
+
+.xricon-favorite:before { content: "\e602"; } //常用功能收藏
+
+.xricon-user:before { content: "\e639"; } //登录-用户
+
+.xricon-password:before { content: "\e63a"; } //登录-密码
+
+.xricon-charge:before { content: "\e63f"; } //订阅和计费
+
+.xricon-about:before { content: "\e63e"; } //关于我们
+
+.xricon-boss:before { content: "\e604"; } //老板端
+
+.xricon-person-info:before { content: "\e615"; } //个人信息
+
+.xricon-theme:before { content: "\e617"; } //换肤
+
+.xricon-extend:before { content: "\e611"; } //扩展
+
+.xricon-company:before { content: "\e640"; } //企业公司
+
+.xricon-my-yj:before { content: "\e622"; } //我的易嘉
+
+.xricon-share:before { content: "\e707"; } //分享
+
+.xricon-service:before { content: "\e61f"; } //服务
+
+.xricon-exit:before { content: "\e636"; } //退出
+
+.xricon-phone:before { content: "\e613"; } //电话咨询
+
+.xricon-QRcode:before { content: "\e706"; } //二维码
+
+.xricon-notice:before { content: "\e618"; } //通知
+
+.xricon-microblog:before { content: "\e709"; } //微博
+
+.xricon-WeChat:before { content: "\e708"; } //微信
+
+.xricon-online-service:before { content: "\e60c"; } //在线服务
+
+.xricon-message:before { content: "\e60b"; } //消息
+
+.xricon-qq:before { content: "\e623"; } //QQ咨询
+
+.xricon-revoke:before { content: "\e612"; } //撤回
+
+.xricon-see:before { content: "\e619"; } //查看
+
+.xricon-publish:before { content: "\e630"; } //发布
+
+.xricon-edit:before { content: "\e631"; } //编辑
+
+.xricon-print:before { content: "\e643"; } //打印
+
+.xricon-contract:before { content: "\e616"; } //合同
+
+.xricon-reject:before { content: "\e70f"; } //反审核
+
+.xricon-audit:before { content: "\e6f1"; } //审核
+
+.xricon-go-payroll:before { content: "\e701"; } //进入工资单
+
+.xricon-shortcut-key:before { content: "\e6de"; } //快捷键
+
+.xricon-certificate-template:before { content: "\e61e"; } //凭证模板
+
+.xricon-send-work:before { content: "\e61c"; } //派工
+
+.xricon-calendar:before { content: "\e620"; } //日历
+
+.xricon-send-work-record:before { content: "\e61d"; } //派工记录
+
+.xricon-filter:before { content: "\e62a"; } //筛选
+
+.xricon-upload:before { content: "\e638"; } //上传
+
+.xricon-remove:before { content: "\e621"; } //删除
+
+.xricon-download:before { content: "\e64c"; } //下载
+
+.xricon-refresh:before { content: "\e64a"; } //刷新
+
+.xricon-pre-audit:before { content: "\e62b"; } //预审
+
+.xricon-re-invit:before { content: "\e637"; } //重新邀请
+
+.xricon-pay-plan:before { content: "\e62f"; } //支付计划
+
+.xricon-menu-dropdown:before { content: "\e62d"; } //菜单-下拉
+
+.xricon-menu-more:before { content: "\e642"; } //更多下拉
+
+.xricon-menu-indent:before { content: "\e62c"; } //菜单-平铺
+
+.xricon-message-warn:before { content: "\e6f8"; } //提示-警告
+
+.xricon-message-success:before { content: "\e634"; } //提示-正确
+
+.xricon-message-error:before { content: "\e6f9"; } //提示-错误
+
+.xricon-message-info:before { content: "\e6f7"; } //提示-提示
+
+.xricon-close:before { content: "\e633"; } //关闭
+
+.xricon-disable:before { content: "\e635"; } //停用
+
+.xricon-remove-row:before { content: "\e6dc"; } //减行
+
+.xricon-add-row:before { content: "\e6df"; } //增行
+
+.xricon-modal-success:before { content: "\e702"; } //弹框提示-正确
+
+.xricon-modal-error:before { content: "\e705"; } //弹框提示-错误
+
+.xricon-modal-warn:before { content: "\e703"; } //弹框提示-警告
+
+.xricon-modal-info:before { content: "\e704"; } //弹框提示-提示
+
+.xricon-second-level:before { content: "\e64d"; } //二级-合
+
+.xricon-third-level:before { content: "\e64f"; } //三级
+
+.xricon-second-level-expand:before { content: "\e64e"; } //二级-展
+
+.xricon-first-level:before { content: "\e650"; } //一级
+
+.xricon-water-account-other:before { content: "\e645"; } //理票-其他
+
+.xricon-water-account-special:before { content: "\e647"; } //理票-特殊业务
+
+.xricon-water-account-pay:before { content: "\e648"; } //理票-支出
+
+.xricon-water-account-income:before { content: "\e646"; } //理票-收入
+
+.xricon-folder:before { content: "\e60f"; } //收缩
+
+.xricon-expand:before { content: "\e610"; } //展开
+
+.xricon-move-right:before { content: "\e627"; } //右移
+
+.xricon-move-up:before { content: "\e625"; } //上移
+
+.xricon-move-down:before { content: "\e626"; } //下移
+
+.xricon-move-bottom:before { content: "\e628"; } //置底
+
+.xricon-move-top:before { content: "\e624"; } //置顶
+
+.xricon-move-left:before { content: "\e629"; } //左移
+
+.xricon-beta:before { content: "\e70a"; } //beta
+
+.xricon-beta2:before { content: "\e70b"; } //beta2
+
+.xricon-tax-declaration:before { content: "\e678"; } //税务申报
+
+.xricon-agent-company2:before { content: "\e679"; } //代账公司2
+
+.xricon-agent-company:before { content: "\e67a"; } //代账公司
+
+.xricon-handovers:before { content: "\e67b"; } //交接
+
+.xricon-outlook:before { content: "\e67f"; } //格式-o
+
+.xricon-unknow-file:before { content: "\e680"; } //格式-未知
+
+.xricon-ppt:before { content: "\e681"; } //格式-p
+
+.xricon-pdf:before { content: "\e682"; } //格式-pdf
+
+.xricon-word:before { content: "\e683"; } //格式-w
+
+.xricon-picture:before { content: "\e684"; } //格式-pic
+
+.xricon-excel:before { content: "\e685"; } //格式-x
+
+.xricon-new:before { content: "\e686"; } //已上传文件
+
+.xricon-onenote:before { content: "\e687"; } //格式-n
+
+.xricon-zip:before { content: "\e688"; } //格式-压缩
+
+.xricon-sort:before { content: "\e689"; } //排序
+
+.xricon-invoicing-manager:before { content: "\e68a"; } //进销存
+
+.xricon-assets-manager:before { content: "\e68b"; } //资产管理
+
+.xricon-assets-dispose:before { content: "\e68c"; } //资产-处置
+
+.xricon-assets-draft:before { content: "\e68d"; } //资产-草稿
+
+.xricon-assets-history:before { content: "\e68e"; } //资产-历史记录
+
+.xricon-anti-settlement:before { content: "\e691"; } //反结账
+
+.xricon-examine-balance:before { content: "\e693"; } //检查-期初余额
+
+.xricon-examine-proof:before { content: "\e692"; } //检查-凭证数
+
+.xricon-examine-broken:before { content: "\e694"; } //检查-凭证断号
+
+.xricon-examine-carryforward:before { content: "\e695"; } //检查-损益结转
+
+.xricon-examine-account:before { content: "\e696"; } //检查-流水账
+
+.xricon-examine-property:before { content: "\e697"; } //检查-资产
+
+.xricon-consultant-expert:before { content: "\e699"; } //咨询客服

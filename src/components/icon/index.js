@@ -6,7 +6,7 @@ export default function IconComponent(props){
 	if(props.visible === false)
 		return null
 
-	let showStyle = props.showStyle || 'default'
+	let showStyle = props.showStyle
 
 	if(props.disabled){
 		showStyle = 'disabled'
@@ -18,6 +18,6 @@ export default function IconComponent(props){
 		[`xricon--${showStyle}`] : !!showStyle,
 		[props.className] : !!props.className
 	})
-	
+
 	return <Icon {...props} className={className} />
 }
