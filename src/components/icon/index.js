@@ -15,7 +15,7 @@ export default function IconComponent(props){
 	let className = classNames({
 		[props.fontFamily] : !!props.fontFamily,
 		[`${props.fontFamily}-${props.type}`] : !!props.fontFamily,
-		[`xricon--${pshowStyle}`] : !!showStyle,
+		[`xricon--${showStyle}`] : !!showStyle,
 		[props.className] : !!props.className
 	})
 	
