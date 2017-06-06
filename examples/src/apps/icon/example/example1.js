@@ -9,8 +9,8 @@ export default class Example1 extends Component {
 				<Icon type='github' style={style} />
 				<Icon type='down' style={style}/>
 				<Icon type='up' style={style}/>
-				<Icon type='left' style={style}/>
-				<Icon type='customer' fontFamily='xricon' style={style}/>
+				<Icon type='left' showStyle='primary' style={style}/>
+				<Icon type='customer' fontFamily='xricon' showStyle='primary' style={style}/>
 			</div>
 		)
 	}
