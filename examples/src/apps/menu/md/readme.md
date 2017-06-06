@@ -2,9 +2,9 @@
 
 该组件来源于antd menu，为页面和功能提供导航的菜单列表。
 
-[详情请点击查看官方](https://ant.design/components/menu-cn/)
-
 ## antd Menu API
+
+[详情请点击查看官方](https://ant.design/components/menu-cn/)
 
 ### Menu props
 
@@ -52,5 +52,5 @@
 
 菜单项分割线，只用在弹出菜单内。
 
-### 详细API
+
 

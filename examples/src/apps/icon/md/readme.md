@@ -16,3 +16,5 @@
 |----------|------------------|----------|--------|
 | type | 图标类型 | string | - |
 | spin | 是否有旋转动画 | boolean | false |
+| style | 样式 | object | - |
+| className | 样式名 | string | - |

@@ -9,9 +9,9 @@ export default class Example extends Component {
 	render(){
 
 		return (
-			<Card title={this.props.title}>
-				<Collapse bordered={false} defaultActiveKey={['1']}>
-					<Panel header="效果" key="1">
+			<Card title={this.props.title} style={{overflow:'visible'}} className='example-template'>
+				<Collapse bordered={false} defaultActiveKey={['1']} style={{overflow:'visible'}}>
+					<Panel header="效果" key="1" style={{overflow:'visible'}}>
 						<div className='example-content'>{this.props.content}</div>
 					</Panel>
 				 	<Panel header="代码" key="2">
