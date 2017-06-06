@@ -3,12 +3,13 @@ import { Button } from 'xr-component'
 
 export default class Example1 extends Component {
 	render(){
+		let style = {marginRight:10}
 		return (
 			<div>
-			    <Button type="primary">Primary</Button>
-			    <Button>Default</Button>
-			    <Button type="dashed">Dashed</Button>
-			    <Button type="danger">Danger</Button>
+			    <Button type="primary" style={style}>Primary</Button>
+			    <Button style={style}>Default</Button>
+			    <Button type="dashed" style={style}>Dashed</Button>
+			    <Button type="danger" style={style}>Danger</Button>
 		  	</div>
 		)
 	}
