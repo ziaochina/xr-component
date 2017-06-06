@@ -51,6 +51,7 @@ export default class RootComponent extends Component{
 		        <SubMenu key="components" title="组件">
 		        	<Menu.Item key="layout">Layout 布局</Menu.Item>
 		        	<Menu.Item key="icon">Icon 图标</Menu.Item>
+		        	<Menu.Item key="button">Button 按钮</Menu.Item>
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>

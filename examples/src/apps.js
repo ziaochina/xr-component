@@ -29,4 +29,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/layout'){
     	cb(require('./apps/layout/index'))
     }
+
+    else if(path === 'apps/button'){
+    	cb(require('./apps/button/index'))
+    }
 }

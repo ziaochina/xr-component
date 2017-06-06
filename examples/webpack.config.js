@@ -5,6 +5,30 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const marked = require("marked")
 const renderer = new marked.Renderer()
 
+var plugins = [
+    new webpack.DefinePlugin({
+        "process.env.NODE_ENV": JSON.stringify('production')
+    })
+]
+
+
+if (process.env.COMPRESS) {
+    plugins.push(
+        new webpack.optimize.UglifyJsPlugin({
+            compressor: {
+                warnings: false
+            }
+        })
+    );
+}
+
+
+plugins.push(new HtmlWebpackPlugin({
+    filename: './index.html', //生成的html存放路径，相对于 path
+    template: './src/index.html', //html模板路径
+    inject: true, //允许插件修改哪些内容，包括head与body`
+}))
+
 module.exports = {
     devtool: 'source-map',
     entry: ["./src/index.js"],
@@ -22,7 +46,7 @@ module.exports = {
         rules: [{
             test: /\.css$/,
             exclude: /node_modules/,
-            
+
             use: [{
                 loader: 'style-loader'
             }, {
@@ -30,7 +54,7 @@ module.exports = {
             }]
         }, {
             test: /\.less$/,
-           // exclude: /node_modules/,
+            // exclude: /node_modules/,
             use: [{
                 loader: 'style-loader'
             }, {
@@ -47,13 +71,13 @@ module.exports = {
             use: [{
                 loader: "html-loader"
             }, {
-              loader:"highlight-loader"
-            },{
+                loader: "highlight-loader"
+            }, {
                 loader: "markdown-loader",
-                options:{renderer}
-                
+                options: { renderer }
+
             }]
-        },{
+        }, {
             test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif|mp4|webm)(\?\S*)?$/,
             //exclude: /node_modules/,
             use: {
@@ -65,23 +89,5 @@ module.exports = {
         }],
     },
 
-    plugins: [
-        new webpack.DefinePlugin({
-            "process.env.NODE_ENV": JSON.stringify('production')
-        }),
-        new HtmlWebpackPlugin({
-            filename: './index.html', //生成的html存放路径，相对于 path
-            template: './src/index.html', //html模板路径
-            inject: true, //允许插件修改哪些内容，包括head与body`
-        }),
-        /*new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            sourceMap:false,
-            compressor: {
-                drop_debugger: true,
-                warnings: false,
-                drop_console: true
-            }
-        })*/
-    ]
+    plugins: plugins
 };
