@@ -3,13 +3,14 @@ import { Icon  } from 'xr-component'
 
 export default class Example1 extends Component {
 	render() {
+		let style = {fontSize: 16, color: '#08c', marginRight:20}
 		return (
 			<div>
-				<Icon type='github' style={{fontSize: 16, color: '#08c', marginRight:20}} />
-				<Icon type='down' style={{fontSize: 16,marginRight:20}}/>
-				<Icon type='up' style={{fontSize: 16, color: '#08c', marginRight:20}}/>
-				<Icon type='left' style={{fontSize: 16,marginRight:20}}/>
-				<Icon type='customer' style={{fontSize: 16, color: '#08c', marginRight:20}}/>
+				<Icon type='github' style={style} />
+				<Icon type='down' style={style}/>
+				<Icon type='up' style={style}/>
+				<Icon type='left' style={style}/>
+				<Icon type='customer' fontFamily='xricon' style={style}/>
 			</div>
 		)
 	}
