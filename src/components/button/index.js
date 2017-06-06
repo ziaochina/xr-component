@@ -5,7 +5,8 @@ import ButtonGroupComponent from './buttonGroup'
 
 function ButtonComponent(props){
 	let className = classNames({
-		'xr-button' :true,
+		'xr-btn' :true,
+		[`xr-btn-${props.type}`]: !!props.type,
 		[props.className] : !!props.className
 	})
 	return <Button {...props} className={className} />

@@ -5,7 +5,7 @@ import {Button} from 'antd'
 export default function ButtonGroupComponent(props){
 	
 	let className = classNames({
-		'xr-button-group':true,
+		'xr-btn-group':true,
 		[props.className] : !!props.className
 	})
 
