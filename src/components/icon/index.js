@@ -4,8 +4,10 @@ import classNames from 'classnames'
 
 export default function IconComponent(props){
 	let className = classNames({
-		'xr-icon' :true,
+		'xricon' :true,
+		[`xricon-${props.type}`] : true,
 		[props.className] : !!props.className
+		
 	})
 	return <Icon {...props} className={className} />
 }

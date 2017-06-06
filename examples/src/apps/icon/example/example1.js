@@ -9,7 +9,7 @@ export default class Example1 extends Component {
 				<Icon type='down' style={{fontSize: 16,marginRight:20}}/>
 				<Icon type='up' style={{fontSize: 16, color: '#08c', marginRight:20}}/>
 				<Icon type='left' style={{fontSize: 16,marginRight:20}}/>
-				<Icon type='right' style={{fontSize: 16, color: '#08c', marginRight:20}}/>
+				<Icon type='customer' style={{fontSize: 16, color: '#08c', marginRight:20}}/>
 			</div>
 		)
 	}
