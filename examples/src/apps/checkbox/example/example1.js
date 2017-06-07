@@ -1,19 +1,14 @@
 import React,{Component} from 'react'
-import { DatePicker  } from 'xr-component'
-
-const { MonthPicker, RangePicker } = DatePicker
+import { Checkbox  } from 'xr-component'
 
 export default class Example1 extends Component {
+	handleChange(e){
+		console.log(`checked = ${e.target.checked}`)
+	}
 	render() {
 		return (
 			<div>
-			    <DatePicker />
-			    <br />
-			    <br />
-			    <MonthPicker placeholder="Select month" />
-			    <br />
-			    <br />
-			    <RangePicker />
+		 		<Checkbox onChange={::this.handleChange}>Checkbox</Checkbox>
 		  	</div>
 		)
 	}

@@ -10,5 +10,5 @@ function CheckboxComponent(props){
 	return <Checkbox {...props} className={className} />
 }
 
-CheckboxComponent.group = Checkbox.group
+CheckboxComponent.Group = Checkbox.Group
 export default CheckboxComponent

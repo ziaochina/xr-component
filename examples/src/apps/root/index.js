@@ -53,6 +53,7 @@ export default class RootComponent extends Component{
 		        	<Menu.Item key="icon">Icon 图标</Menu.Item>
 		        	<Menu.Item key="button">Button 按钮</Menu.Item>
 		        	<Menu.Item key="datePicker">DatePicker 日期</Menu.Item>
+		        	<Menu.Item key="checkbox">Checkbox 多选框</Menu.Item>
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
