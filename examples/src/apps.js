@@ -33,4 +33,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/button'){
     	cb(require('./apps/button/index'))
     }
+
+    else if(path === 'apps/datePicker'){
+    	cb(require('./apps/datePicker/index'))
+    }
 }

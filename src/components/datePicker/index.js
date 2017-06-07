@@ -13,4 +13,4 @@ function DatePickerComponent(props){
 DatePickerComponent.MonthPicker = DatePicker.MonthPicker
 DatePickerComponent.RangePicker = DatePicker.RangePicker
 
-export default DatePicker
+export default DatePickerComponent
