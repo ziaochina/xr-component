@@ -55,6 +55,7 @@ export default class RootComponent extends Component{
 		        	<Menu.Item key="datePicker">DatePicker 日期</Menu.Item>
 		        	<Menu.Item key="checkbox">Checkbox 多选框</Menu.Item>
 		        	<Menu.Item key="radio">Radio 单选框</Menu.Item>
+		        	<Menu.Item key="switch">Switch 开关</Menu.Item>
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
