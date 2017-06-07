@@ -6,7 +6,7 @@
 
 属性 | 说明 | 类型 | 默认值
 -----|-----|-----|------
-type | 增加了normal,primary改成了黄色| string | -
+type | 在原来基础上增加了 `showy` `softly` | string | -
 
 
 ## ant Button API

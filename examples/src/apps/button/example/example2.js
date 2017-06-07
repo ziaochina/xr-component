@@ -6,12 +6,11 @@ export default class Example2 extends Component {
 		let style = {marginRight:10}
 		return (
 			<div>
-			    <Button icon='download' style={style}> download</Button>
+			    <Button type="softly" icon='download' style={style}>download</Button>
+			    <Button type="showy" shape="circle" icon='download' style={style} />
 			    <Button type="primary" icon='download' style={style}></Button>
-			    <Button type="primary" shape="circle" icon='download' style={style} />
-			    <Button type="primary" icon='download' disabled style={style}></Button>
-			    <Button type="normal"  icon='menu-dropdown' iconFontFamily='xricon' iconShowStyle='primary' style={style} >sort</Button>
-			    <Button>
+			    <Button type="danger"  icon='menu-dropdown' iconFontFamily='xricon' style={style} >sort</Button>
+			    <Button >
         			more <Icon type="down" />
       			</Button>
 		  	</div>

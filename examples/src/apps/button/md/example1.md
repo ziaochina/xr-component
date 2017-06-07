@@ -8,10 +8,12 @@ export default class Example1 extends Component {
 		return (
 			<div>
 			    <Button style={style}>Default</Button>
+			    <Button type="showy" style={style}>Showy</Button>
+			    <Button type="softly" style={style}>Softly</Button>
 			    <Button type="primary" style={style}>Primary</Button>
-			    <Button type="normal" style={style}>Normal</Button>
 			    <Button type="dashed" style={style}>Dashed</Button>
 			    <Button type="danger" style={style}>Danger</Button>
+			    <Button type="primary" disabled style={style}>Disabled</Button>
 		  	</div>
 		)
 	}

@@ -10,7 +10,7 @@ export default class Example2 extends Component {
 			    <h4>Basic</h4>
 			    <ButtonGroup style={style}>
 			      <Button>Cancel</Button>
-			      <Button type="primary">OK</Button>
+			      <Button type="showy">OK</Button>
 			    </ButtonGroup>
 
 			    <ButtonGroup style={style}>
@@ -20,24 +20,24 @@ export default class Example2 extends Component {
 			    </ButtonGroup>
 
 			    <ButtonGroup>
-			      <Button type="normal">L</Button>
+			      <Button type="softly">L</Button>
 			      <Button>M</Button>
 			      <Button>M</Button>
 			      <Button type="dashed">R</Button>
 			    </ButtonGroup>
 
-			    <h4>With Icon</h4>
+			    <h4 style={{marginTop:20}}>With Icon</h4>
 			    <ButtonGroup style={style}>
-			      <Button type="normal">
+			      <Button type="softly">
 			        <Icon type="left" />Go back
 			      </Button>
-			      <Button type="normal">
+			      <Button type="softly">
 			        Go forward<Icon type="right" />
 			      </Button>
 			    </ButtonGroup>
 			    <ButtonGroup>
-			      <Button type="normal" icon="cloud" />
-			      <Button type="normal" icon="cloud-download" />
+			      <Button type="primary" icon="cloud" />
+			      <Button type="primary" icon="cloud-download" />
 			    </ButtonGroup>
 			  </div>
 		)
