@@ -2,11 +2,11 @@ import React,{Component} from 'react'
 import { Button, Icon } from 'xr-component'
 const ButtonGroup = Button.Group;
 
-export default class Example2 extends Component {
+export default class Example3 extends Component {
 	render(){
 		let style = {marginRight:10}
 		return (
-			 <div>
+			<div>
 			    <h4>Basic</h4>
 			    <ButtonGroup style={style}>
 			      <Button>Cancel</Button>
@@ -20,7 +20,7 @@ export default class Example2 extends Component {
 			    </ButtonGroup>
 
 			    <ButtonGroup>
-			      <Button type="softly">L</Button>
+			      <Button type="primary">L</Button>
 			      <Button>M</Button>
 			      <Button>M</Button>
 			      <Button type="dashed">R</Button>
@@ -36,10 +36,10 @@ export default class Example2 extends Component {
 			      </Button>
 			    </ButtonGroup>
 			    <ButtonGroup>
-			      <Button type="primary" icon="cloud" />
-			      <Button type="primary" icon="cloud-download" />
+			      <Button type="showy" icon="cloud" />
+			      <Button type="softly" icon="cloud-download" />
 			    </ButtonGroup>
-			  </div>
+		  	</div>
 		)
 	}
 }

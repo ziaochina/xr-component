@@ -11,10 +11,10 @@ export default class Example extends Component {
 		return (
 			<Card title={this.props.title} style={{overflow:'visible'}} className='example-template'>
 				<Collapse bordered={false} defaultActiveKey={['1']} style={{overflow:'visible'}}>
-					<Panel header="效果" key="1" style={{overflow:'visible'}}>
+					<Panel header={<a>效果</a>} key="1" style={{overflow:'visible'}}>
 						<div className='example-content'>{this.props.content}</div>
 					</Panel>
-				 	<Panel header="代码" key="2">
+				 	<Panel header={<a>代码</a>} key="2">
 				 		{Markdown({content:this.props.doc})}
     				</Panel>
     			</Collapse>

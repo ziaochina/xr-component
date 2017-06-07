@@ -11,7 +11,7 @@ export default class Example2 extends Component {
 			    <Button type="showy" shape="circle" icon='download' style={style} />
 			    <Button type="primary" icon='download' style={style}></Button>
 			    <Button type="danger"  icon='menu-dropdown' iconFontFamily='xricon' style={style} >sort</Button>
-			    <Button >
+			    <Button>
         			more <Icon type="down" />
       			</Button>
 		  	</div>
