@@ -41,4 +41,8 @@ export default function requireApp(path, cb) {
   	else if(path === 'apps/checkbox'){
     	cb(require('./apps/checkbox/index'))
     }
+
+  	else if(path === 'apps/radio'){
+    	cb(require('./apps/radio/index'))
+    }
 }

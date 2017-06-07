@@ -11,5 +11,6 @@ function RadioComponent(props){
 }
 
 RadioComponent.Group = Radio.Group
+RadioComponent.Button = Radio.Button
 
 export default RadioComponent
