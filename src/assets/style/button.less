@@ -1,8 +1,6 @@
 .xr-btn{
 	&-showy{
 		.button-variant-primary(#fff; @showy-color);
-
-
 		.xr-btn-group &:not(:first-child):not(:last-child) {
       		border-right-color: @showy-7;
       		border-left-color: @showy-7;
@@ -22,19 +20,47 @@
 	     	}	
 	    }
 
-	    .@{btn-prefix-cls}-group &:last-child:not(:first-child),
-		    .@{btn-prefix-cls}-group & + & {
+	    .xr-btn-group &:last-child:not(:first-child),
+		    .xr-btn-group & + & {
 		      	border-left-color: @showy-7;
 		      	&[disabled] {
 			        border-left-color: @btn-default-border;
 		      	}
 		    }
-		}
-	&-softly{
-		.button-variant-primary(#fff; @softly-color);
-	}
-	&-group {
 	}
 
+	&-softly{
+		.button-variant-primary(#fff; @softly-color);
+
+		.xr-btn-group &:not(:first-child):not(:last-child) {
+      		border-right-color: @softly-7;
+      		border-left-color: @softly-7;
+
+      		&:disabled {
+        		border-color: @btn-default-border;
+      		}
+    	}
+
+
+	    .xr-btn-group &:first-child {
+	      	&:not(:last-child) {
+	        	border-right-color: @softly-7;
+		        &[disabled] {
+		          	border-right-color: @btn-default-border;
+		        }
+	     	}	
+	    }
+
+	    .xr-btn-group &:last-child:not(:first-child),
+		    .xr-btn-group & + & {
+		      	border-left-color: @softly-7;
+		      	&[disabled] {
+			        border-left-color: @btn-default-border;
+		      	}
+		    }
+	}
+	
+	&-group {
+	}
 }
 
