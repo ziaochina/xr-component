@@ -12,7 +12,10 @@ function ButtonComponent(props){
 		[props.className] : !!props.className
 	})
 
-    const iconNode = props.icon ? <Icon type={props.icon} /> : null
+    const iconNode = props.icon 
+    	? <Icon type={props.icon} fontFamily={props.iconFontFamily} showStyle={props.iconShowStyle} /> 
+    	: null
+
     let children = props.children || null
     let ps = {...omit(props, ['icon']), className:className}
 
