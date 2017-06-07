@@ -1,6 +1,6 @@
 {
   "name": "xr-component",
-  "version": "0.1.32",
+  "version": "0.1.34",
   "description": "",
   "main": "./lib/index",
   "scripts": {
@@ -8,6 +8,7 @@
     "build-min": "set NODE_ENV=production && set COMPRESS=1 && webpack --output-filename xr-component.min.js",
     "compile": "babel -d lib/ src/",
     "prepublish": "rm -rf lib && rm -rf dist && npm run compile && npm run build-min",
+    "commit": "git add . && git commit -m 'zlj' &&  git push -u origin master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
