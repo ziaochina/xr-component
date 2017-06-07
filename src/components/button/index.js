@@ -13,9 +13,16 @@ function ButtonComponent(props){
 	})
 
     const iconNode = props.icon ? <Icon type={props.icon} /> : null
+    let children = props.children
+    if(iconNode){
+    	children = children || []
+    	children.splice(0,0, iconNode)
 
-	return <Button {...omit(props, ['icon'])} className={className}>{iconNode}</Button>
-}
+    }
+
+	return <Button {...omit(props, ['icon'])} className={className} children={children} />
+} 
+
 
 ButtonComponent.Group = ButtonGroupComponent
 
