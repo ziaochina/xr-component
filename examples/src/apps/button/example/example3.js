@@ -10,7 +10,7 @@ export default class Example2 extends Component {
 			    <h4>Basic</h4>
 			    <ButtonGroup style={style}>
 			      <Button>Cancel</Button>
-			      <Button type="normal">OK</Button>
+			      <Button type="primary">OK</Button>
 			    </ButtonGroup>
 
 			    <ButtonGroup style={style}>

@@ -17,25 +17,48 @@
 
 .xricon--primary{
 	&:before {
-        color:@icon-primary;
+        color:@primary-color;
   	}
 
   	&:hover:before{
   		  cursor: pointer;
-        color: ~`colorPalette("@{icon-primary}", 5)`;
+        color: ~`colorPalette("@{primary-color}", 5)`;
+    }
+}
+
+.xricon--showy{
+	  &:before {
+        color:@showy-color ;
+  	}
+
+  	&:hover:before{
+  		  cursor: pointer;
+        color: ~`colorPalette("@{showy-color}", 5)`;
+    }
+}
+
+.xricon--softly{
+    &:before {
+        color:@softly-color ;
+    }
+
+    &:hover:before{
+        cursor: pointer;
+        color: ~`colorPalette("@{softly-color}", 5)`;
     }
 }
 
 .xricon--normal{
-	  &:before {
-        color:@icon-normal ;
-  	}
+    &:before {
+        color:@text-color ;
+    }
 
-  	&:hover:before{
-  		  cursor: pointer;
-        color: ~`colorPalette("@{icon-normal}", 5)`;
+    &:hover:before{
+        cursor: pointer;
+        color: ~`colorPalette("@{text-color}", 5)`;
     }
 }
+
 
 .xricon--disabled{
 	  &:before {
