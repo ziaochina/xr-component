@@ -3,7 +3,7 @@
 输入或选择日期的控件。
 
 
-## ant DatePicker API
+## antd DatePicker API
 
 [详情请点击查看官方](https://ant.design/components/date-picker-cn/)
 

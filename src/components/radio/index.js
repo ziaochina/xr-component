@@ -10,4 +10,6 @@ function RadioComponent(props){
 	return <Radio {...props} className={className} />
 }
 
+RadioComponent.Group = Radio.Group
+
 export default RadioComponent
