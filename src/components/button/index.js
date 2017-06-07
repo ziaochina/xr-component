@@ -13,14 +13,26 @@ function ButtonComponent(props){
 	})
 
     const iconNode = props.icon ? <Icon type={props.icon} /> : null
-    let children = props.children
-    if(iconNode){
-    	children = children || []
-    	children.splice(0,0, iconNode)
+    let children = props.children || null
+    let ps = {...omit(props, ['icon']), className:className}
 
-    }
+    if(iconNode && !children){
+		return (
+			<Button {...ps}>
+				{iconNode}
+		 	</Button>
+		)
+	}
 
-	return <Button {...omit(props, ['icon'])} className={className} children={children} />
+	if(iconNode && children){
+		return (
+			<Button {...ps}>
+				{iconNode}{children}
+		 	</Button>
+		)
+	}
+
+	return <Button {...ps} />
 } 
 
 
