@@ -10,4 +10,5 @@ function CheckboxComponent(props){
 	return <Checkbox {...props} className={className} />
 }
 
+CheckboxComponent.group = Checkbox.group
 export default CheckboxComponent

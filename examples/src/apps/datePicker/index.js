@@ -13,7 +13,7 @@ export default class DatePickerDemo extends Component{
 		return (
 			<div>
 				<Example 
-			 		title = '示例一：图标'
+			 		title = '示例一：基本'
 			 		content={<Example1 />}
 			 		doc={example1Md} 
 				/>
