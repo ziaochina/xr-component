@@ -7,10 +7,12 @@ export default class Example1 extends Component {
 		return (
 			<div>
 				<Icon type='github' style={style} />
-				<Icon type='down' visible={false} style={style} />
-				<Icon type='up'  disabled style={style} />
-				<Icon type='left' showStyle='normal' style={style}/>
-				<Icon type='right' showStyle='primary' style={style}/>
+				<Icon type='github' visible={false} style={style} />
+				<Icon type='github'  disabled style={style} />
+				<Icon type='github' showStyle='showy' style={style}/>
+				<Icon type='github' showStyle='softly' style={style}/>
+				<Icon type='github' showStyle='primary' style={style}/>
+				<Icon type='github' showStyle='normal' style={style}/>
 				<Icon type='menu-dropdown' fontFamily='xricon' showStyle='primary' style={style}/>
 			</div>
 		)

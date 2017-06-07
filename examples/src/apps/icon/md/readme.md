@@ -7,7 +7,7 @@
 | 参数      | 说明             | 类型      | 默认值  |
 |----------|------------------|----------|--------|
 | fontFamily | 字体，不设置使用antd的字体，设置'xricon'使用本组件的字体库，自定义字体也支持 | string | - |
-| showStyle | 显示风格, 设置了显示风格, hover会有颜色变化 | string:`primary` `normal` | - |
+| showStyle | 显示风格, 设置了显示风格, hover会有颜色变化 | string:`showy` `softly` `primary` `normal` | - |
 | disabled | 是否置灰 | bool | - |
 | visible | 是否显示 | bool | - |
 
