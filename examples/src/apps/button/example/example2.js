@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import { Button } from 'xr-component'
+import { Button, Icon } from 'xr-component'
 
 export default class Example2 extends Component {
 	render(){
@@ -8,9 +8,12 @@ export default class Example2 extends Component {
 			<div>
 			    <Button icon='download' style={style}> download</Button>
 			    <Button type="primary" icon='download' style={style}></Button>
-			    <Button type="normal" style={style}>Normal</Button>
-			    <Button type="dashed" style={style}>Dashed</Button>
-			    <Button type="danger" style={style}>Danger</Button>
+			    <Button type="primary" shape="circle" icon='download' style={style} />
+			    <Button type="primary" icon='download' disabled style={style}></Button>
+			    <Button type="normal"  icon='menu-dropdown' iconFontFamily='xricon' iconShowStyle='primary' style={style} >sort</Button>
+			    <Button>
+        			more <Icon type="down" />
+      			</Button>
 		  	</div>
 		)
 	}

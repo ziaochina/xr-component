@@ -8,6 +8,9 @@ import Example1 from './example/example1'
 import example2Md from './md/example2.md'
 import Example2 from './example/example2'
 
+import example3Md from './md/example3.md'
+import Example3 from './example/example3'
+
 import readmeMd from './md/readme.md'
 
 
@@ -25,6 +28,12 @@ export default class CardDemo extends Component{
 			 		title = '示例二'
 			 		content={<Example2 />}
 			 		doc={example2Md} 
+				/>
+
+				<Example 
+			 		title = '示例三'
+			 		content={<Example3 />}
+			 		doc={example3Md} 
 				/>
 				
 				{Markdown({content:readmeMd})}

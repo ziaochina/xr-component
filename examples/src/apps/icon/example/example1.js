@@ -11,7 +11,7 @@ export default class Example1 extends Component {
 				<Icon type='up'  disabled style={style} />
 				<Icon type='left' showStyle='normal' style={style}/>
 				<Icon type='right' showStyle='primary' style={style}/>
-				<Icon type='customer' fontFamily='xricon' showStyle='primary' style={style}/>
+				<Icon type='menu-dropdown' fontFamily='xricon' showStyle='primary' style={style}/>
 			</div>
 		)
 	}
