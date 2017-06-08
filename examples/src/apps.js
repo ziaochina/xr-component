@@ -53,4 +53,16 @@ export default function requireApp(path, cb) {
   	else if(path === 'apps/link'){
     	cb(require('./apps/link/index'))
     }
+
+  	else if(path === 'apps/tabs'){
+    	cb(require('./apps/tabs/index'))
+    }
+
+  	else if(path === 'apps/tree'){
+    	cb(require('./apps/tree/index'))
+    }
+
+  	else if(path === 'apps/treeSelect'){
+    	cb(require('./apps/treeSelect/index'))
+    }
 }

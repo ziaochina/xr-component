@@ -60,14 +60,16 @@ export default class RootComponent extends Component{
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
+		        	<Menu.Item key="tabs">Tabs 标签页</Menu.Item>
+		            <Menu.Item key="tree">Tree 树</Menu.Item>
+		            <Menu.Item key="treeSelect">TreeSelect 树选择框</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>
 		            <Menu.Item key="inputNumber">InputNumber 数字输入框</Menu.Item>
 		            <Menu.Item key="password">Password 密码框</Menu.Item>
 		            <Menu.Item key="text">Text 文本</Menu.Item>
 		            <Menu.Item key="select">Select 选择框</Menu.Item>
 		            <Menu.Item key="link">Link 链接</Menu.Item>
-		            <Menu.Item key="tabs">Tabs 页签</Menu.Item>
-		            <Menu.Item key="tree">Tree 树</Menu.Item>
+		           
 		        </SubMenu>
      		</Menu>
 	    )
