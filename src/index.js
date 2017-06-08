@@ -19,6 +19,8 @@ import BadgeComponent from './components/badge'
 import BreadcrumbComponent from './components/breadcrumb'
 import CarouselComponent from './components/Carousel'
 import CascaderComponent from './components/Cascader'
+import MessageComponent from './components/message'
+import ToastComponent from './components/toast'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -41,4 +43,6 @@ export const Badge = BadgeComponent
 export const Breadcrumb = BreadcrumbComponent
 export const Carousel = CarouselComponent
 export const Cascader = CascaderComponent
+export const Message = MessageComponent
+export const Toast = ToastComponent
 
