@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import {Modal} from 'antd'
 import info from './info'
+import error from './error'
+import success from './success'
+import warning from './warning'
 
 
 
@@ -81,8 +84,8 @@ if(!m){
 }
 
 m.info = info
-m.success = Modal.success
-m.error = Modal.error
-m.warning = Modal.warning
+m.success = success
+m.error = error
+m.warning = warning
 
 export default m

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Modal} from 'antd'
 
-export default function info(props){
+export default function error(props){
 	return new Promise((resolve, reject)=>{
 		let handleOk = () =>{
 			resolve(true)
@@ -14,6 +14,6 @@ export default function info(props){
 		props.onOk = handleOk
 		props.onCancel = handleCancel
 
-		Modal.info(props)
+		Modal.error(props)
 	})
 }
