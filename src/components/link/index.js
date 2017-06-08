@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import omit from 'omit.js'
 
-export default function Link(props){
+export default function LinkComponent(props){
 	let className = classNames({
 		'xr-link' :true,
 		[props.className] : !!props.className

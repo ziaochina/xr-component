@@ -9,6 +9,10 @@ import CheckboxComponent from './components/checkbox'
 import RadioComponent from './components/radio'
 import SwitchComponent from './components/switch'
 import LinkComponent from './components/link'
+import TabsComponent from './components/tabs'
+import TreeComponent from './components/tree'
+import TreeSelectComponent from './components/treeSelect'
+
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -21,3 +25,6 @@ export const Checkbox = CheckboxComponent
 export const Radio = RadioComponent
 export const Switch = SwitchComponent
 export const Link = LinkComponent
+export const Tabs = TabsComponent
+export const Tree = TreeComponent
+export const TreeSelect = TreeSelectComponent
