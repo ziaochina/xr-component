@@ -1,38 +1,15 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import {Modal} from 'antd'
-import {fromJS} from 'immutable'
+
 
 
 class ModalComponent extends Component{
-	state = {
-		data:fromJS({
-		})
-	}
-
 	constructor(props){
 		super(props)
-		this.setOkListener = this.setOkListener.bind(this)
-		this.setCancelListener = this.setCancelListener.bind(this)
-	}
-
-	setOkListener(cb){
-		this.setState({data:this.state.data.set('okListener', cb)})		
-	}
-
-	setCancelListener(cb){
-		this.setState({data:this.state.data.set('cancelListener', cb)})		
 	}
 
 	async handleOk(){
-		let l = this.state.data.get('okListener'),
-			ret 
-		if( l ){
-			ret = await l()
-			if( ret === false){
-				return
-			}
-		}
 		this.props.onOk && this.props.onOk(ret)
 	}
 
@@ -46,14 +23,10 @@ class ModalComponent extends Component{
 		return (
 			<Modal 
 				visible 
-				{...otherProps} 
+				{...this.props} 
 				onOk = {::this.handleOk}
-				onCancel = {::this.handleCancel}>
-				{React.cloneElement(children, {
-					setOkListener:this.setOkListener, 
-					setCancelListener:this.setCancelListener
-				})}
- 			</Modal>
+				onCancel = {::this.handleCancel}
+			/>
  		)
 	}
 }
