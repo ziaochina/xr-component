@@ -12,6 +12,11 @@ import LinkComponent from './components/link'
 import TabsComponent from './components/tabs'
 import TreeComponent from './components/tree'
 import TreeSelectComponent from './components/treeSelect'
+import AffixComponent from './components/affix'
+import AnchorComponent from './components/anchor'
+import BackTopComponent from './components/backTop'
+import BadgeComponent from './components/badge'
+import BreadcrumbComponent from './components/breadcrumb'
 
 
 export const Menu = MenuComponent
@@ -28,3 +33,8 @@ export const Link = LinkComponent
 export const Tabs = TabsComponent
 export const Tree = TreeComponent
 export const TreeSelect = TreeSelectComponent
+export const Affix = AffixComponent
+export const Anchor = AnchorComponent
+export const BackTop = BackTopComponent
+export const Breadcrumb = BreadcrumbComponent
+
