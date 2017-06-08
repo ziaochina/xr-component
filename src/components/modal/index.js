@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import {Modal} from 'antd'
+import info from './info'
 
 
 
@@ -78,5 +79,10 @@ if(!m){
     m = ModalComponent.newInstance()
     window.__Modal = m
 }
+
+m.info = info
+m.success = Modal.success
+m.error = Modal.error
+m.warning = Modal.warning
 
 export default m
