@@ -18,6 +18,7 @@ import BackTopComponent from './components/backTop'
 import BadgeComponent from './components/badge'
 import BreadcrumbComponent from './components/breadcrumb'
 import CarouselComponent from './components/Carousel'
+import CascaderComponent from './components/Cascader'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -39,4 +40,5 @@ export const BackTop = BackTopComponent
 export const Badge = BadgeComponent
 export const Breadcrumb = BreadcrumbComponent
 export const Carousel = CarouselComponent
+export const Cascader = CascaderComponent
 
