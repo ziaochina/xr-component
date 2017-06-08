@@ -65,6 +65,7 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="tree">Tree 树</Menu.Item>
 		            <Menu.Item key="treeSelect">TreeSelect 树选择框</Menu.Item>
 		            <Menu.Item key="toast">Toast 轻提示</Menu.Item>
+		            <Menu.Item key="modal">Modal 对话框</Menu.Item>
 		            <Menu.Item key="affix">Affix 固钉</Menu.Item>
 		            <Menu.Item key="anchor">Anchor 瞄点</Menu.Item>
 		            <Menu.Item key="backTop">BackTop 回到顶部</Menu.Item>

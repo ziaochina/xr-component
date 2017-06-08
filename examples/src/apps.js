@@ -98,4 +98,8 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/toast/index'))
     }
 
+    else if(path === 'apps/modal'){
+    	cb(require('./apps/modal/index'))
+    }
+
 }

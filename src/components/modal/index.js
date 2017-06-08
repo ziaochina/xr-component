@@ -10,7 +10,7 @@ class ModalComponent extends Component{
 	}
 
 	async handleOk(){
-		this.props.onOk && this.props.onOk(ret)
+		this.props.onOk && this.props.onOk()
 	}
 
 	handleCancel(){
