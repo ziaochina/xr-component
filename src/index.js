@@ -17,6 +17,7 @@ import AnchorComponent from './components/anchor'
 import BackTopComponent from './components/backTop'
 import BadgeComponent from './components/badge'
 import BreadcrumbComponent from './components/breadcrumb'
+import CarouselComponent from './components/Carousel'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -37,4 +38,5 @@ export const Anchor = AnchorComponent
 export const BackTop = BackTopComponent
 export const Badge = BadgeComponent
 export const Breadcrumb = BreadcrumbComponent
+export const Carousel = CarouselComponent
 

@@ -81,4 +81,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/breadcrumb'){
     	cb(require('./apps/breadcrumb/index'))
     }
+
+    else if(path === 'apps/badge'){
+    	cb(require('./apps/badge/index'))
+    }
 }

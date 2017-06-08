@@ -67,6 +67,7 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="anchor">Anchor 瞄点</Menu.Item>
 		            <Menu.Item key="backTop">BackTop 回到顶部</Menu.Item>
 		            <Menu.Item key="breadcrumb">Breadcrumb 面包屑</Menu.Item>
+		            <Menu.Item key="badge">Badge 徽标数</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>
 		            <Menu.Item key="inputNumber">InputNumber 数字输入框</Menu.Item>
 		            <Menu.Item key="password">Password 密码框</Menu.Item>
