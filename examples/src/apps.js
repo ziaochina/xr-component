@@ -94,4 +94,8 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/cascader/index'))
     }
 
+    else if(path === 'apps/toast'){
+    	cb(require('./apps/toast/index'))
+    }
+
 }
