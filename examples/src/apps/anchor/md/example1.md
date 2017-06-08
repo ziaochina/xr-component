@@ -1,17 +1,20 @@
 ```javascript
 import React,{Component} from 'react'
-import { Link  } from 'xr-component'
+import { Anchor  } from 'xr-component'
+
+const { Link } = Anchor
 
 export default class Example1 extends Component {
-
-	handleClick(){
-		console.log('link')
-	}
-
 	render() {
 		return (
-			<div>
-		 		<Link onClick={::this.handleClick}>this is a link!</Link>
+			<div id='anchor-example'>
+		 		<Anchor >
+				    <Link href="#anchor-example" title="Example" />
+				    <Link href="#api" title="API">
+				      	<Link href="#anchor-props" title="Anchor Props" />
+				      	<Link href="#link-props" title="Link Props" />
+				    </Link>
+			  	</Anchor>
 		  	</div>
 		)
 	}

@@ -1,17 +1,15 @@
 ```javascript
 import React,{Component} from 'react'
-import { Link  } from 'xr-component'
+import { BackTop  } from 'xr-component'
 
 export default class Example1 extends Component {
-
-	handleClick(){
-		console.log('link')
-	}
-
 	render() {
 		return (
-			<div>
-		 		<Link onClick={::this.handleClick}>this is a link!</Link>
+		 	<div>
+			    <BackTop />
+			    Scroll down to see the bottom-right
+			    <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> gray </strong>
+			    button.
 		  	</div>
 		)
 	}

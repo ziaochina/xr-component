@@ -2,12 +2,7 @@ import React,{Component} from 'react'
 import { Affix, Button } from 'xr-component'
 
 export default class Example1 extends Component {
-
-
 	render() {
-		let a = Affix
-	let b = Button
-	debugger
 		return (
 			<div>
 		 		<Affix>
