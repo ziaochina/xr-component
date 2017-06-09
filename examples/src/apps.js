@@ -158,7 +158,7 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/transfer/index'))
     }
 
-
-
-
+    else if(path === 'apps/input'){
+    	cb(require('./apps/input/index'))
+    }
 }
