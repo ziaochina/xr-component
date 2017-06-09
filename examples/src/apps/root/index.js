@@ -86,8 +86,8 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="steps">Steps 步骤条</Menu.Item>
 		            <Menu.Item key="rate">Rate 评分</Menu.Item>
 		            <Menu.Item key="slider">Slider 滑动输入条</Menu.Item>
-		            <Menu.Item key="upload">upload 时间轴</Menu.Item>
-		            <Menu.Item key="transfer">transfer 时间轴</Menu.Item>
+		            <Menu.Item key="upload">Upload 上传</Menu.Item>
+		            <Menu.Item key="transfer">Transfer 穿梭框</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>
 		            <Menu.Item key="inputNumber">InputNumber 数字输入框</Menu.Item>
 		            <Menu.Item key="password">Password 密码框</Menu.Item>

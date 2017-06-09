@@ -1,17 +1,22 @@
 import React,{Component} from 'react'
-import { Link  } from 'xr-component'
+import { Upload, Button, Icon  } from 'xr-component'
 
 export default class Example1 extends Component {
-
-	handleClick(){
-		console.log('link')
-	}
-
 	render() {
+		const props = {
+  			name: 'file',
+  			action: '//jsonplaceholder.typicode.com/posts/',
+  			headers: {
+    			authorization: 'authorization-text',
+  			}
+  		}
+
 		return (
-			<div>
-		 		<Link onClick={::this.handleClick}>this is a link!</Link>
-		  	</div>
+			<Upload {...props}>
+		    	<Button>
+		      		<Icon type="upload" /> Click to Upload
+		    	</Button>
+		  	</Upload>
 		)
 	}
 }

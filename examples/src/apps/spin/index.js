@@ -8,7 +8,7 @@ import Example1 from './example/example1'
 import readmeMd from './md/readme.md'
 
 
-export default class SpinDemo extends Component{
+export default class Demo extends Component{
 	render(){
 		return (
 			<div>

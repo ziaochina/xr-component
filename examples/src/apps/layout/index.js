@@ -12,7 +12,7 @@ import Example2 from './example/example2'
 import readmeMd from './md/readme.md'
 
 
-export default class LayoutDemo extends Component{
+export default class Demo extends Component{
 	render(){
 		return (
 			<div>

@@ -14,7 +14,7 @@ import Example3 from './example/example3'
 import readmeMd from './md/readme.md'
 
 
-export default class CardDemo extends Component{
+export default class Demo extends Component{
 	render(){
 		return (
 			<div>
