@@ -30,6 +30,12 @@ import TooltipComponent from './components/tooltip'
 import SpinComponent from './components/spin'
 import ProgressComponent from './components/progress'
 import TimelineComponent from './components/timeline'
+import PaginationComponent from './components/pagination'
+import StepsComponent from './components/steps'
+import RateComponent from './components/rate'
+import SliderComponent from './components/slider'
+import UploadComponent from './components/upload'
+import TransferComponent from './components/transfer'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -63,3 +69,9 @@ export const Tooltip = TooltipComponent
 export const Spin = SpinComponent
 export const Progress = ProgressComponent
 export const Timeline = TimelineComponent
+export const Pagination = PaginationComponent
+export const Steps = StepsComponent
+export const Rate = RateComponent
+export const Slider = SliderComponent
+export const Upload = UploadComponent
+export const Transfer = TransferComponent

@@ -114,4 +114,51 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/popconfirm/index'))
     }
 
+    else if(path === 'apps/popover'){
+    	cb(require('./apps/popover/index'))
+    }
+
+    else if(path === 'apps/tooltip'){
+    	cb(require('./apps/tooltip/index'))
+    }
+
+    else if(path === 'apps/spin'){
+    	cb(require('./apps/spin/index'))
+    }
+
+    else if(path === 'apps/progress'){
+    	cb(require('./apps/progress/index'))
+    }
+
+    else if(path === 'apps/timeline'){
+    	cb(require('./apps/timeline/index'))
+    }
+
+    else if(path === 'apps/pagination'){
+    	cb(require('./apps/pagination/index'))
+    }
+
+    else if(path === 'apps/steps'){
+    	cb(require('./apps/steps/index'))
+    }
+
+    else if(path === 'apps/rate'){
+    	cb(require('./apps/rate/index'))
+    }
+
+    else if(path === 'apps/slider'){
+    	cb(require('./apps/slider/index'))
+    }
+
+    else if(path === 'apps/upload'){
+    	cb(require('./apps/upload/index'))
+    }
+
+    else if(path === 'apps/transfer'){
+    	cb(require('./apps/transfer/index'))
+    }
+
+
+
+
 }

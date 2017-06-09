@@ -12,6 +12,8 @@ export default class RootComponent extends Component{
 
     handleMenuClick(e){
     	this.props.setCurrentAppPath(`apps/${e.key}`)
+    	document.body.scrollTop = 0;
+      	document.documentElement.scrollTop = 0;
     }
 
     handleGithubClick(){
@@ -45,16 +47,16 @@ export default class RootComponent extends Component{
 
 	getMenu(){
 		return (
-			<Menu mode="inline" defaultOpenKeys={['components']} onClick={::this.handleMenuClick}>
+			<Menu  mode="inline" defaultOpenKeys={['components']} onClick={::this.handleMenuClick}>
 			 	<Menu.Item key="about" >关于</Menu.Item>
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
+	        		<Menu.Item key="icon">Icon 图标</Menu.Item>
+	        		<Menu.Item key="button">Button 按钮</Menu.Item>
+	        		<Menu.Item key="datePicker">DatePicker 日期</Menu.Item>
+	        		<Menu.Item key="checkbox">Checkbox 多选框</Menu.Item>
+	        		<Menu.Item key="radio">Radio 单选框</Menu.Item>
 		        	<Menu.Item key="layout">Layout 布局</Menu.Item>
-		        	<Menu.Item key="icon">Icon 图标</Menu.Item>
-		        	<Menu.Item key="button">Button 按钮</Menu.Item>
-		        	<Menu.Item key="datePicker">DatePicker 日期</Menu.Item>
-		        	<Menu.Item key="checkbox">Checkbox 多选框</Menu.Item>
-		        	<Menu.Item key="radio">Radio 单选框</Menu.Item>
 		        	<Menu.Item key="cascader">Cascader 级联选择</Menu.Item>
 		        	<Menu.Item key="link">Link 链接</Menu.Item>
 		        	<Menu.Item key="switch">Switch 开关</Menu.Item>
@@ -75,13 +77,16 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="breadcrumb">Breadcrumb 面包屑</Menu.Item>
 		            <Menu.Item key="badge">Badge 徽标数</Menu.Item>
 		            <Menu.Item key="carousel">Carousel 走马灯</Menu.Item>
+		            <Menu.Item key="popover">Popover 气泡卡片</Menu.Item>
+		            <Menu.Item key="tooltip">Tooltip 文字提示</Menu.Item>
+		            <Menu.Item key="spin">Spin 加载中</Menu.Item>
+		            <Menu.Item key="progress">Progress 进度条</Menu.Item>
+		            <Menu.Item key="timeline">Timeline 时间轴</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>
 		            <Menu.Item key="inputNumber">InputNumber 数字输入框</Menu.Item>
 		            <Menu.Item key="password">Password 密码框</Menu.Item>
 		            <Menu.Item key="text">Text 文本</Menu.Item>
 		            <Menu.Item key="select">Select 选择框</Menu.Item>
-		         
-		           
 		        </SubMenu>
      		</Menu>
 	    )
