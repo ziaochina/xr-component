@@ -7,8 +7,6 @@ import success from './success'
 import warning from './warning'
 import confirm from './confirm'
 
-
-
 class ModalComponent extends Component{
 	state = {
 	}

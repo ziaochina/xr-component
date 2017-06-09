@@ -24,7 +24,7 @@ export default class LinkDemo extends Component{
 				<Example 
 			 		title = '示例二'
 			 		content={<Example2 />}
-			 		doc={example1Md} 
+			 		doc={example2Md} 
 				/>
 
 				{Markdown({content:readmeMd})}
