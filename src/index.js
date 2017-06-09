@@ -36,6 +36,7 @@ import RateComponent from './components/rate'
 import SliderComponent from './components/slider'
 import UploadComponent from './components/upload'
 import TransferComponent from './components/transfer'
+import InputComponent from './components/input'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -75,3 +76,4 @@ export const Rate = RateComponent
 export const Slider = SliderComponent
 export const Upload = UploadComponent
 export const Transfer = TransferComponent
+export const Input = InputComponent
