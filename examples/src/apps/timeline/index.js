@@ -8,7 +8,7 @@ import Example1 from './example/example1'
 import readmeMd from './md/readme.md'
 
 
-export default class LinkDemo extends Component{
+export default class TimelineDemo extends Component{
 	render(){
 		return (
 			<div>

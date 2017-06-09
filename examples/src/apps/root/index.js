@@ -82,6 +82,12 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="spin">Spin 加载中</Menu.Item>
 		            <Menu.Item key="progress">Progress 进度条</Menu.Item>
 		            <Menu.Item key="timeline">Timeline 时间轴</Menu.Item>
+		            <Menu.Item key="pagination">Pagination 分页</Menu.Item>
+		            <Menu.Item key="steps">Steps 步骤条</Menu.Item>
+		            <Menu.Item key="rate">Rate 评分</Menu.Item>
+		            <Menu.Item key="slider">Slider 滑动输入条</Menu.Item>
+		            <Menu.Item key="upload">upload 时间轴</Menu.Item>
+		            <Menu.Item key="transfer">transfer 时间轴</Menu.Item>
 		            <Menu.Item key="input">Input 输入框</Menu.Item>
 		            <Menu.Item key="inputNumber">InputNumber 数字输入框</Menu.Item>
 		            <Menu.Item key="password">Password 密码框</Menu.Item>

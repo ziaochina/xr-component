@@ -1,17 +1,16 @@
 ```javascript
 import React,{Component} from 'react'
-import { Link  } from 'xr-component'
+import { Pagination  } from 'xr-component'
 
 export default class Example1 extends Component {
-
-	handleClick(){
-		console.log('link')
-	}
-
 	render() {
 		return (
 			<div>
-		 		<Link onClick={::this.handleClick}>this is a link!</Link>
+		 		<Pagination defaultCurrent={1} total={50} />
+		 		<br/>
+		 		<Pagination defaultCurrent={6} total={500} />
+		 		<br/>
+		 		<Pagination showSizeChanger defaultCurrent={3} total={500} />
 		  	</div>
 		)
 	}

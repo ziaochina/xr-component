@@ -1,17 +1,16 @@
 ```javascript
 import React,{Component} from 'react'
-import { Link  } from 'xr-component'
+import { Progress  } from 'xr-component'
 
 export default class Example1 extends Component {
-
-	handleClick(){
-		console.log('link')
-	}
-
 	render() {
 		return (
 			<div>
-		 		<Link onClick={::this.handleClick}>this is a link!</Link>
+		 		<Progress percent={30} />
+			    <Progress percent={50} status="active" />
+			    <Progress percent={70} status="exception" />
+			    <Progress percent={100} />
+			    <Progress percent={50} showInfo={false} />
 		  	</div>
 		)
 	}

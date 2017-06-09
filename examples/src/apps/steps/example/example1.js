@@ -1,16 +1,24 @@
 import React,{Component} from 'react'
-import { Link  } from 'xr-component'
+import { Steps  } from 'xr-component'
+
+const Step = Steps.Step
 
 export default class Example1 extends Component {
-
-	handleClick(){
-		console.log('link')
-	}
-
 	render() {
 		return (
 			<div>
-		 		<Link onClick={::this.handleClick}>this is a link!</Link>
+			 	<Steps current={1}>
+				    <Step title="Finished" description="This is a description." />
+				    <Step title="In Progress" description="This is a description." />
+				    <Step title="Waiting" description="This is a description." />
+			  	</Steps>
+			  	<br/>
+			  	<br/>
+			  	<Steps direction="vertical" current={1}>
+				    <Step title="Finished" description="This is a description." />
+				    <Step title="In Progress" description="This is a description." />
+				    <Step title="Waiting" description="This is a description." />
+			  	</Steps>
 		  	</div>
 		)
 	}
