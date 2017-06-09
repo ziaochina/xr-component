@@ -110,4 +110,8 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/notification/index'))
     }
 
+    else if(path === 'apps/popconfirm'){
+    	cb(require('./apps/popconfirm/index'))
+    }
+
 }

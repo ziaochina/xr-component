@@ -68,6 +68,7 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="modal">Modal 对话框</Menu.Item>
 		            <Menu.Item key="alert">Alert 警告提示</Menu.Item>
 		            <Menu.Item key="notification">Notification 通知</Menu.Item>
+		            <Menu.Item key="popconfirm">Popconfirm 气泡确认框</Menu.Item>
 		            <Menu.Item key="affix">Affix 固钉</Menu.Item>
 		            <Menu.Item key="anchor">Anchor 瞄点</Menu.Item>
 		            <Menu.Item key="backTop">BackTop 回到顶部</Menu.Item>

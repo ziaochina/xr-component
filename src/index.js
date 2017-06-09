@@ -25,6 +25,11 @@ import ModalComponent from './components/modal'
 import AlertComponent from './components/alert'
 import NotificationComponent from './components/notification'
 import PopconfirmComponent from './components/popconfirm'
+import PopoverComponent from './components/popover'
+import TooltipComponent from './components/tooltip'
+import SpinComponent from './components/spin'
+import ProgressComponent from './components/progress'
+import TimelineComponent from './components/timeline'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -53,3 +58,8 @@ export const Modal = ModalComponent
 export const Alert = AlertComponent
 export const Notification = NotificationComponent
 export const Popconfirm = PopconfirmComponent
+export const Popover = PopoverComponent
+export const Tooltip = TooltipComponent
+export const Spin = SpinComponent
+export const Progress = ProgressComponent
+export const Timeline = TimelineComponent
