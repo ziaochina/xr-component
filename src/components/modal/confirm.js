@@ -14,6 +14,6 @@ export default function confirm(props){
 		props.onOk = handleOk
 		props.onCancel = handleCancel
 
-		Modal.error(props)
+		Modal.confirm(props)
 	})
 }

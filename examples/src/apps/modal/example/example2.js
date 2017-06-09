@@ -15,9 +15,14 @@ export default class Example2 extends Component {
 		let ret = await Modal.success({title:'success', content:'Success'})
 		console.log(ret)
 	}
-	
+
 	async showWarning(){
 		let ret = await Modal.warning({title:'warning', content:'Warning'})
+		console.log(ret)
+	}
+
+	async showConfirm(){
+		let ret = await Modal.confirm({title:'confirm', content:'confirm'})
 		console.log(ret)
 	}
 
@@ -34,6 +39,9 @@ export default class Example2 extends Component {
 		 		<br />
 		 		<br />
 		 		<Button onClick={::this.showWarning}>Warning</Button>
+ 				<br />
+		 		<br />
+		 		<Button onClick={::this.showConfirm}>Confirm</Button>
 		  	</div>
 		)
 	}
