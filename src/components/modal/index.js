@@ -10,16 +10,49 @@ import confirm from './confirm'
 
 
 class ModalComponent extends Component{
+	state = {
+	}
+
 	constructor(props){
 		super(props)
+		this.setOkListener = this.setOkListener.bind(this)
+		this.setCancelListener = this.setCancelListener.bind(this)
 	}
+
+
+	setOkListener(cb){
+		this.setState({okListener: cb})		
+	}
+
+	setCancelListener(cb){
+		this.setState({cancelListener: cb})		
+	}
+
 
 	async handleOk(){
-		this.props.onOk && this.props.onOk()
+		let listener = this.state.okListener, ret
+		
+		if( listener ){
+			ret = await listener()
+			if( ret === false){
+				return
+			}
+		}
+		
+		this.props.onOk && this.props.onOk(ret)
 	}
 
-	handleCancel(){
-		this.props.onCancel && this.props.onCancel()
+	async handleCancel(){
+		let listener = this.state.cancelListener, ret
+		
+		if( listener ){
+			ret = await listener()
+			if( ret === false){
+				return
+			}
+		}
+
+		this.props.onCancel && this.props.onCancel(ret)
 	}
 
 	render(){
@@ -42,22 +75,22 @@ ModalComponent.newInstance = (props)=>{
 	  		const div = document.createElement('div')
 	  		
 	  		return new Promise((resolve, reject)=>{
-  				let handleCancel = ()=>{
+  				let handleCancel = (ret)=>{
 	  				ReactDOM.unmountComponentAtNode(div)
 			        try{
 			      	   document.body.removeChild(div)
 			        }
 			        catch(err){}
-			        resolve(false)
+			        resolve(ret || false)
 	  			}
 
-		  		let handleOk =(data) =>{
+		  		let handleOk =(ret) =>{
 		  			ReactDOM.unmountComponentAtNode(div)
 			        try{
 			      	   document.body.removeChild(div)
 			        }
 			        catch(err){}
-		  			resolve(data || true)
+		  			resolve(ret || true)
 		  		}
 		  		
 	  			const props = properties || {}
