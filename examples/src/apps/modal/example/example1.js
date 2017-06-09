@@ -24,15 +24,6 @@ export default class Example1 extends Component {
 		console.log(ret)
 	}
 
-	async showModal2(){
-
-
-		let ret = await Modal.info({title:'info', content:'ddd'})
-		console.log(ret)
-	}
-
-
-
 	render() {
 		return (
 			<div>
@@ -40,7 +31,6 @@ export default class Example1 extends Component {
 		 		<br />
 		 		<br />
 		 		<Button onClick={::this.showModal1}>需要知道是否点击的OK</Button>
-		 		<Button onClick={::this.showModal2}>Info</Button>
 		  	</div>
 		)
 	}
