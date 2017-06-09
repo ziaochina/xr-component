@@ -17,6 +17,7 @@ class InputComponent extends React.Component {
   	handleChange(e){
   		const value = (e.target.validity.valid) ? e.target.value : this.state.value
     	this.setState({ value })
+    	this.props.onChange && this.props.onChange(e)
   	}
 
   	render(){
