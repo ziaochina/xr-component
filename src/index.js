@@ -24,6 +24,7 @@ import ToastComponent from './components/toast'
 import ModalComponent from './components/modal'
 import AlertComponent from './components/alert'
 import NotificationComponent from './components/notification'
+import PopconfirmComponent from './components/popconfirm'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -51,3 +52,4 @@ export const Toast = ToastComponent
 export const Modal = ModalComponent
 export const Alert = AlertComponent
 export const Notification = NotificationComponent
+export const Popconfirm = PopconfirmComponent

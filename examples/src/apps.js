@@ -102,4 +102,12 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/modal/index'))
     }
 
+    else if(path === 'apps/alert'){
+    	cb(require('./apps/alert/index'))
+    }
+
+    else if(path === 'apps/notification'){
+    	cb(require('./apps/notification/index'))
+    }
+
 }
