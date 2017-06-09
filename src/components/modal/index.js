@@ -5,6 +5,7 @@ import info from './info'
 import error from './error'
 import success from './success'
 import warning from './warning'
+import confirm from './confirm'
 
 
 
@@ -87,5 +88,6 @@ m.info = info
 m.success = success
 m.error = error
 m.warning = warning
+m.confirm = confirm
 
 export default m
