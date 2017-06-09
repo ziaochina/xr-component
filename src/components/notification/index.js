@@ -14,7 +14,7 @@ function promiseWrapper(fun){
 	}
 }
 
-export default const notificationComponent = {
+export default {
 	open: promiseWrapper(notification.open),
 	success:promiseWrapper(notification.success),
 	error:promiseWrapper(notification.error),
