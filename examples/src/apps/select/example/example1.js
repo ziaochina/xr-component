@@ -3,6 +3,8 @@ import { Select  } from 'xr-component'
 
 const Option = Select.Option
 
+debugger
+
 export default class Example1 extends Component {
 
 	handleChange(){
