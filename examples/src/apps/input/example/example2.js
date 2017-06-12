@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import ReactDOM from 'react-dom' 
 import { Input, Icon  } from 'xr-component'
 
-export default class Example1 extends Component {
+export default class Example2 extends Component {
 	constructor(props) {
    	 	super(props)
     	this.state = {

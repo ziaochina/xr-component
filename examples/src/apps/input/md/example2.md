@@ -1,4 +1,5 @@
 ```
+```javascript
 import React,{Component} from 'react'
 import ReactDOM from 'react-dom' 
 import { Input, Icon  } from 'xr-component'
@@ -38,5 +39,5 @@ export default class Example1 extends Component {
 		  	</div>
 		)
 	}
-}javascript
+}
 ```

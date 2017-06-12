@@ -1,6 +1,7 @@
 import React from 'react'
 import {Input} from 'antd'
 import classNames from 'classnames'
+import InputNumber from './inputNumber'
 
 class InputComponent extends React.Component {
 	
@@ -39,6 +40,7 @@ class InputComponent extends React.Component {
 
 InputComponent.Search = Input.Search
 InputComponent.Group = Input.Group
+InputComponent.Number = InputNumber
 
 export default InputComponent
 
