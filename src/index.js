@@ -37,6 +37,7 @@ import SliderComponent from './components/slider'
 import UploadComponent from './components/upload'
 import TransferComponent from './components/transfer'
 import InputComponent from './components/input'
+import SelectComponent from './components/select'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -77,3 +78,4 @@ export const Slider = SliderComponent
 export const Upload = UploadComponent
 export const Transfer = TransferComponent
 export const Input = InputComponent
+export const Select = SelectComponent
