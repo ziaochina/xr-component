@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import { Select  } from 'xr-component'
 
+const Option = Select.Option
+
 export default class Example1 extends Component {
 
 	handleChange(){
