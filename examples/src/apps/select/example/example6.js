@@ -1,19 +1,41 @@
 import React,{Component} from 'react'
-import { Select,Button  } from 'xr-component'
+import { Select,Button,Modal,Input  } from 'xr-component'
 
 const Option = Select.Option
 
-const children = []
-for (let i = 10; i < 20; i++) {
-  	children.push(<Option key={i.toString(36) + i} >{i.toString(36) + i}</Option>)
-}
-
-
 export default class Example1 extends Component {
+	constructor(props){
+		super(props)
+
+		this.state = {
+			items : ["aaa1","aaa2","ccc3"],
+			inputValue : ''
+		}
+
+	}
 
 	handleChange(value){
 		console.log(`selected ${value}`);
 	}
+
+	handleAddInputChange(e){
+		this.setState({inputValue:e.target.value}) 
+	}
+
+	async handleAdd(){
+		if(await Modal.show( {
+			title:"新增",
+			children:(<div><Input value={this.state.inputValue} onChange={::this.handleAddInputChange} /></div>)
+		})){
+			let items = this.state.items
+			items.push(this.state.inputValue)
+			this.setState({items, inputValue:''})
+		}
+		else{
+			this.setState({inputValue:''})	
+		}
+	}
+
 
 	render() {
 		return (
@@ -21,9 +43,11 @@ export default class Example1 extends Component {
 		 		<Select 
 		 		 style={{ width: 120 }} 
 		 		 onChange={this.handleChange}
-		 		 dropdownFooter={<Button style={{width:"100%"}}>新增</Button> }
+		 		 dropdownFooter={<Button style={{width:"100%"}} type="primary" onClick={::this.handleAdd}>新增</Button> }
 		 		 enableHideDropdownByClick={true}>
-			     {children}
+			     {
+			     	this.state.items.map(i=><Option key={i}>{i}</Option>)
+			     }
 			    </Select>
 		  	</div>
 		)
