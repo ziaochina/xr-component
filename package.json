@@ -1,6 +1,6 @@
 {
   "name": "xr-component",
-  "version": "0.1.76",
+  "version": "0.1.77",
   "description": "",
   "main": "./lib/index",
   "scripts": {
@@ -18,7 +18,8 @@
     "classnames": "^2.2.5",
     "omit.js": "^0.1.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "ziaochina-rc-select": "^0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
