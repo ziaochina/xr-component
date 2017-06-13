@@ -51,17 +51,21 @@ export default class RootComponent extends Component{
 			 	<Menu.Item key="about" >关于</Menu.Item>
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
+		        	<Menu.Item key="layout">Layout 布局</Menu.Item>
 	        		<Menu.Item key="icon">Icon 图标</Menu.Item>
 	        		<Menu.Item key="input">Input 输入框</Menu.Item>
-	        		<Menu.Item key="select">select 选择框</Menu.Item>
+	        		<Menu.Item key="select">Select 选择框</Menu.Item>
 	        		<Menu.Item key="button">Button 按钮</Menu.Item>
 	        		<Menu.Item key="datePicker">DatePicker 日期</Menu.Item>
 	        		<Menu.Item key="checkbox">Checkbox 多选框</Menu.Item>
 	        		<Menu.Item key="radio">Radio 单选框</Menu.Item>
-		        	<Menu.Item key="layout">Layout 布局</Menu.Item>
 		        	<Menu.Item key="cascader">Cascader 级联选择</Menu.Item>
 		        	<Menu.Item key="link">Link 链接</Menu.Item>
 		        	<Menu.Item key="switch">Switch 开关</Menu.Item>
+    			   	<Menu.Item key="rate">Rate 评分</Menu.Item>
+		            <Menu.Item key="slider">Slider 滑动输入条</Menu.Item>
+		            <Menu.Item key="upload">Upload 上传</Menu.Item>
+		            <Menu.Item key="transfer">Transfer 穿梭框</Menu.Item>
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
@@ -86,15 +90,6 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="timeline">Timeline 时间轴</Menu.Item>
 		            <Menu.Item key="pagination">Pagination 分页</Menu.Item>
 		            <Menu.Item key="steps">Steps 步骤条</Menu.Item>
-		            <Menu.Item key="rate">Rate 评分</Menu.Item>
-		            <Menu.Item key="slider">Slider 滑动输入条</Menu.Item>
-		            <Menu.Item key="upload">Upload 上传</Menu.Item>
-		            <Menu.Item key="transfer">Transfer 穿梭框</Menu.Item>
-		            <Menu.Item key="input">Input 输入框</Menu.Item>
-		            <Menu.Item key="inputNumber">InputNumber 数字输入框</Menu.Item>
-		            <Menu.Item key="password">Password 密码框</Menu.Item>
-		            <Menu.Item key="text">Text 文本</Menu.Item>
-		            <Menu.Item key="select">Select 选择框</Menu.Item>
 		        </SubMenu>
      		</Menu>
 	    )

@@ -20,6 +20,9 @@ import Example5 from './example/example5'
 import example6Md from './md/example6.md'
 import Example6 from './example/example6'
 
+import example7Md from './md/example7.md'
+import Example7 from './example/example7'
+
 import readmeMd from './md/readme.md'
 
 
@@ -61,6 +64,12 @@ export default class Demo extends Component{
 			 		title = '示例六:新增功能'
 			 		content={<Example6 />}
 			 		doc={example6Md} 
+				/>
+
+				<Example 
+			 		title = '示例七:后缀'
+			 		content={<Example7 />}
+			 		doc={example7Md} 
 				/>
 
 				{Markdown({content:readmeMd})}

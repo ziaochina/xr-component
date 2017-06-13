@@ -6,10 +6,10 @@
 
 | 参数      | 说明             | 类型      | 默认值  |
 |----------|------------------|----------|--------|
-| dropdownFooter | 字体，不设置使用antd的字体，设置'xricon'使用本组件的字体库，自定义字体也支持 | string | - |
-| enableHideDropdownByClick | 显示风格, 设置了显示风格, hover会有颜色变化 | string:`showy` `softly` `primary` `normal` | - |
-| disabled | 是否置灰 | bool | - |
-| visible | 是否显示 | bool | - |
+| dropdownFooter | 下拉脚，可以在下拉底部添加袁术 | ReactNode | - |
+| enableHideDropdownByClick | 下拉脚点击是否关闭当前弹出的下拉框 | boolean | - |
+| suffix | 后缀，类似input后缀的功能 | ReactNode | - |
+
 
 
 ## antd Select API

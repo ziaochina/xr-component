@@ -30,6 +30,11 @@ function SelectComponent(props){
       	combobox: isCombobox,
     }
 
+    let suffix = props.suffix
+    if(props.suffix){
+    	suffix = React.cloneElement(props.suffix, {style:{float:"right"}})
+    }
+
 
 	return (<Select 
 		{...otherProps} 
@@ -38,6 +43,7 @@ function SelectComponent(props){
 		className={className} 
 		optionLabelProp={optionLabelProp || 'children'}
 		notFoundContent={notFoundContent}
+		suffix = {suffix}
 	/>)
 }
 
