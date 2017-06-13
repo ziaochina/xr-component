@@ -7,7 +7,7 @@ const Cell = DataGrid.Cell
 export default class Example1 extends Component {
 	render() {
 		return (
-			<div style={{height:400}}>
+			<div style={{height:400, display:'flex'}}>
 		 		<DataGrid
         			rowsCount={100}
         			rowHeight={50}
