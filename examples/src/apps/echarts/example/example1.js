@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import { Echarts  } from 'xr-component'
+//import { Echarts  } from 'xr-component'
 
 export default class Example1 extends Component {
 
@@ -66,11 +66,7 @@ export default class Example1 extends Component {
 	render() {
 		return (
 			<div>
-		 		<Echarts
-                    option={this.getOtion()}
-                    style={{height: '350px', width: '100%'}}
-                    className='react_for_echarts'
-                />
+		 		
 		  	</div>
 		)
 	}
