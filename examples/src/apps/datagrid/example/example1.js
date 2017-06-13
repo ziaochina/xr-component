@@ -7,17 +7,16 @@ const Cell = DataGrid.Cell
 export default class Example1 extends Component {
 	render() {
 		return (
-			<div>
-		 		  <DataGrid
-        rowsCount={100}
-        rowHeight={50}
-        width={1000}
-        height={500}>
-        <Column
-          cell={<Cell>Basic content</Cell>}
-          width={200}
-        />
-      </DataGrid>
+			<div style={{height:400}}>
+		 		<DataGrid
+        			rowsCount={100}
+        			rowHeight={50}
+        			>
+        			<Column
+          				cell={<Cell>Basic content</Cell>}
+          				width={200}
+        			/>
+      			</DataGrid>
 		  	</div>
 		)
 	}
