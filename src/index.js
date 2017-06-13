@@ -40,6 +40,7 @@ import InputComponent from './components/input'
 import SelectComponent from './components/select'
 import DropdownComponent from './components/dropdown'
 import EchartsComponent from './components/echarts'
+import DataGridComponent from  './components/datagrid'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -83,3 +84,4 @@ export const Input = InputComponent
 export const Select = SelectComponent
 export const Dropdown = DropdownComponent
 export const Echarts = EchartsComponent
+export const DataGrid = DataGridComponent

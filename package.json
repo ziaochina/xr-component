@@ -1,6 +1,6 @@
 {
   "name": "xr-component",
-  "version": "0.1.96",
+  "version": "0.1.97",
   "description": "",
   "main": "./lib/index",
   "scripts": {
@@ -17,6 +17,7 @@
     "antd": "^2.10.4",
     "classnames": "^2.2.5",
     "echarts-for-react": "^1.4.3",
+    "fixed-data-table": "^0.6.4",
     "omit.js": "^0.1.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
