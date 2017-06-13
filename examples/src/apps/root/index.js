@@ -91,6 +91,7 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="timeline">Timeline 时间轴</Menu.Item>
 		            <Menu.Item key="pagination">Pagination 分页</Menu.Item>
 		            <Menu.Item key="steps">Steps 步骤条</Menu.Item>
+		            <Menu.Item key="echarts">Echarts 图表</Menu.Item>
 		        </SubMenu>
      		</Menu>
 	    )
