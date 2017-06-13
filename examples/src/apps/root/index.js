@@ -55,11 +55,12 @@ export default class RootComponent extends Component{
 	        		<Menu.Item key="icon">Icon 图标</Menu.Item>
 	        		<Menu.Item key="input">Input 输入框</Menu.Item>
 	        		<Menu.Item key="select">Select 选择框</Menu.Item>
-	        		<Menu.Item key="button">Button 按钮</Menu.Item>
 	        		<Menu.Item key="datePicker">DatePicker 日期</Menu.Item>
 	        		<Menu.Item key="checkbox">Checkbox 多选框</Menu.Item>
 	        		<Menu.Item key="radio">Radio 单选框</Menu.Item>
 		        	<Menu.Item key="cascader">Cascader 级联选择</Menu.Item>
+	        		<Menu.Item key="button">Button 按钮</Menu.Item>
+	        		<Menu.Item key="dropdown">Dropdown 下拉</Menu.Item>
 		        	<Menu.Item key="link">Link 链接</Menu.Item>
 		        	<Menu.Item key="switch">Switch 开关</Menu.Item>
     			   	<Menu.Item key="rate">Rate 评分</Menu.Item>

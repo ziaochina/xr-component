@@ -165,4 +165,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/select'){
         cb(require('./apps/select/index'))
     }
+
+    else if(path === 'apps/dropdown'){
+        cb(require('./apps/dropdown/index'))
+    }
 }

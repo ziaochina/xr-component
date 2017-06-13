@@ -10,3 +10,7 @@ function DropdownComponent(props){
 	})
 	return <Dropdown {...props} className={className} />
 }
+
+DropdownComponent.Button = Dropdown.Button
+
+export default DropdownComponent
