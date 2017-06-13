@@ -24,7 +24,7 @@ export default function DropdownButton(props){
       placement,
     }
 
-    if ('visible' in this.props) {
+    if ('visible' in props) {
       	dropdownProps.visible = visible
     }
 
