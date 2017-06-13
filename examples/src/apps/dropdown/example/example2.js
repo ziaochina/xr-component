@@ -12,19 +12,39 @@ const menu = (
 )
 
 export default class Example2 extends Component {
-
 	render() {
-		let a = Dropdown
-			debugger
 		return (
 
 			<div>
 			 	<Dropdown.Button type="showy" overlay={menu}>
       				Dropdown
     			</Dropdown.Button>
-
+    			<br/>
+    			<br/>
+    			<Dropdown.Button type="softly" overlay={menu}>
+      				Dropdown
+    			</Dropdown.Button>
+    			<br/>
+    			<br/>
+    			<Dropdown.Button type="primary" overlay={menu}>
+      				Dropdown
+    			</Dropdown.Button>
+				<br/>
+    			<br/>
+    			<Dropdown.Button  overlay={menu}>
+      				Dropdown
+    			</Dropdown.Button>
+				<br/>
+    			<br/>
     			<Dropdown overlay={menu}>
 			      <Button type="showy" style={{ marginLeft: 8 }}>
+			        Button <Icon type="down" />
+			      </Button>
+			    </Dropdown>
+				<br/>
+    			<br/>
+			    <Dropdown overlay={menu}>
+			      <Button type="" style={{ marginLeft: 8 }}>
 			        Button <Icon type="down" />
 			      </Button>
 			    </Dropdown>
