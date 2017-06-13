@@ -1,6 +1,7 @@
 import React from 'react'
 import {Dropdown} from 'antd'
 import classNames from 'classnames'
+import DropdownButton from './dropdownButton'
 
 
 function DropdownComponent(props){
@@ -11,6 +12,6 @@ function DropdownComponent(props){
 	return <Dropdown {...props} className={className} />
 }
 
-DropdownComponent.Button = Dropdown.Button
+DropdownComponent.Button = DropdownButton
 
 export default DropdownComponent
