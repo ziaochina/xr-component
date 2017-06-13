@@ -3,7 +3,7 @@ import { Input  } from 'xr-component'
 
 const InputNumber = Input.Number
 
-export default class Example1 extends Component {
+export default class Example3 extends Component {
 
 	render() {
 		return (

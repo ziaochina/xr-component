@@ -38,6 +38,7 @@ import UploadComponent from './components/upload'
 import TransferComponent from './components/transfer'
 import InputComponent from './components/input'
 import SelectComponent from './components/select'
+import DropdownComponent from './components/dropdown'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -79,3 +80,4 @@ export const Upload = UploadComponent
 export const Transfer = TransferComponent
 export const Input = InputComponent
 export const Select = SelectComponent
+export const Dropdown = DropdownComponent
