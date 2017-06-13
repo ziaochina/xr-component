@@ -173,4 +173,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/echarts'){
         cb(require('./apps/echarts/index'))
     }
+
+    else if(path === 'apps/datagrid'){
+        cb(require('./apps/datagrid/index'))
+    }
 }

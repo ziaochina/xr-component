@@ -24,7 +24,7 @@ class DataGridComponent extends React.Component {
             height = dom.offsetHeight,
             width = dom.offsetWidth
 
-        if(height != this.get('height') || width != this.get('width')){
+        if(height != this.state.height || width != this.state.width){
             this.setState({ height, width })
         }
     }
