@@ -1,5 +1,5 @@
 import React from 'react'
-import {Dropdown} from './index'
+import Dropdown from './index'
 import Button from '../button'
 import Icon from '../icon'
 import classNames from 'classnames'

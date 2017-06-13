@@ -14,7 +14,10 @@ const menu = (
 export default class Example2 extends Component {
 
 	render() {
+		let a = Dropdown
+			debugger
 		return (
+
 			<div>
 			 	<Dropdown.Button type="showy" overlay={menu}>
       				Dropdown
