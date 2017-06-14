@@ -13,11 +13,14 @@ export default function GridComponent(props){
 		width,
 		height,
 		heightFromRowsCount,
-		disabled,
+		readonly,
+		focusCell,
 		onRowClick,
 		onRowDoubleClick,
 		onRowMouseEnter,
 		onRowMouseLeave,
+		onCellEnter,
+		onCellLeave,
 		onScrollEnd,
 		scrollToRow,
 		scrollToColumn,
@@ -26,8 +29,9 @@ export default function GridComponent(props){
 
 	//高度根据行数计算
 	if(heightFromRowsCount){
- 		height =  headerHeight + 2 + rowHeight * rowsCount + footerHeight
+ 		height = headerHeight + 2 + rowHeight * rowsCount + footerHeight
 	}
+
 
 	return (
 		<Table 

@@ -71,7 +71,7 @@ class DataGridComponent extends React.Component {
     render() {
         let className = classNames({
             'xr-datagrid':true,
-            'xr-datagrid-editable': !this.props.disabled,
+            'xr-datagrid-editable': !this.props.readonly,
             [this.props.className]: !!this.props.className,
         })
 
