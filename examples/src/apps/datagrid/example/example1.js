@@ -6,7 +6,7 @@ const Cell = DataGrid.Cell
 
 const dataSource = []
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 100; i++) {
 	dataSource.push({
 		code : `code${i}`,
 		name: `name${i}`
@@ -37,7 +37,7 @@ export default class Example1 extends Component {
 			<div style={{height:300, display:'flex'}}>
 		 		<DataGrid
 		 			headerHeight={35}
-		 		    rowsCount={3}
+		 		    rowsCount={100}
         			rowHeight={35}
         			footerHeight={35}
         			columns = {columns}
