@@ -19,38 +19,34 @@ const replaceSpaceToNbsp = (text) =>{
 }
 
 export default class textCellComponent extends Component{
-	render(){
-		  let {
-      		height,
-	      	width,
-	      	style,
-	      	className,
-	      	align,
+  render(){
+      let {
+          height,
+          width,
+          style,
+          className,
+          align,
           format,
-	      	value,
+          value,
           dataType,
           precision,
           enableTooltip,
           enableEllipsis,
           transSpaceToNbsp,
-	      	...other
-    	} = this.props
+          ...other
+      } = this.props
 
-    	let cls = classNames({
-    		  'xr-datagrid-cellContent':true,
-    		  [className] : !!className
-    	})
-
-      let innerCls = classNames({
-          'xr-datagrid-cellContent-text':true,
-          [`xr-datagrid-cellContent-text-${align}`] : !!align
+      let cls = classNames({
+          'xr-datagrid-cellContent':true,
+          [`xr-datagrid-cellContent-${align}`]: !!align,
+          [className] : !!className
       })
 
       let innerStyle = {
-  			  height,
-  			  width,
-      		...style,
-    	}
+          height,
+          width,
+          ...style,
+      }
 
       switch(dataType){
           case 'bool':
@@ -84,14 +80,13 @@ export default class textCellComponent extends Component{
       if(enableEllipsis){
         innerStyle = { ...innerStyle, whiteSpace:'nowrap',overflow:'hidden', textOverflow:'ellipsis'}
         ext.title = value
+        value = [value,'...']
       }
 
-    	return (
-      		<div {...other} className={cls}  >
-              <div className={innerCls} style={innerStyle} {...ext}>
-                {value}
-              </div>
-      		</div>
-    	)
-	}
+      return (
+          <div {...other} className={cls} style={innerStyle} {...ext}>
+              {value}
+          </div>
+      )
+  }
 }
