@@ -34,9 +34,9 @@ export default class Example1 extends Component {
 		return (
 			<div style={{height:300, display:'flex'}}>
 		 		<DataGrid
-		 			headerHeight={50}
+		 			headerHeight={35}
 		 		    rowsCount={100}
-        			rowHeight={50}
+        			rowHeight={35}
         			columns = {columns}
     			/>
 		  	</div>
