@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import { DataGrid  } from 'xr-component'
+import { DataGrid,Checkbox  } from 'xr-component'
 
 const Column = DataGrid.Column
 const Cell = DataGrid.Cell
@@ -15,6 +15,13 @@ for (let i = 0; i < 100; i++) {
 
 const columns = [
 	<Column
+		columnKey='select'
+		fixed
+		header={<Cell><Checkbox /></Cell>}
+		cell={(ps)=><Cell><Checkbox/></Cell>}
+		width={40}
+	/>,
+	<Column
 		columnKey='code'
 		header={<Cell>编码</Cell>}
 		cell={(ps)=><Cell>{dataSource[ps.rowIndex].code}</Cell>}
@@ -28,6 +35,27 @@ const columns = [
 		footer={<Cell>footer</Cell>}
 		flexGrow={1}
 		width={200}
+	/>,
+	<Column
+		columnKey='ext1'
+		header={<Cell>Ext1</Cell>}
+		cell={(ps)=><Cell>ext1</Cell>}
+		flexGrow={1}
+		width={400}
+	/>,
+	<Column
+		columnKey='ext2'
+		header={<Cell>Ext2</Cell>}
+		cell={(ps)=><Cell>ext2</Cell>}
+		flexGrow={1}
+		width={400}
+	/>,
+	<Column
+		columnKey='ext3'
+		header={<Cell>Ext3</Cell>}
+		cell={(ps)=><Cell>ext3</Cell>}
+		flexGrow={1}
+		width={400}
 	/>
 ]
 
