@@ -45,7 +45,7 @@ export default function GridComponent(props){
 			height={height}
             scrollToRow = {scrollToRow}
             scrollToColumn ={scrollToColumn}
-            onRowDoubleClick={disabled ? onRowDoubleClick : undefined}
+            onRowDoubleClick={readonly ? onRowDoubleClick : undefined}
 			onRowClick={onRowClick}
 			onRowMouseEnter={onRowMouseEnter}
 			onRowMouseLeave={onRowMouseLeave}
