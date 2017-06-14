@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Table} from 'fixed-data-table'
+import classNames from 'classnames'
 
 export default function GridComponent(props){
 	let {

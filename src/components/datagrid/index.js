@@ -4,7 +4,8 @@ import classNames from 'classnames'
 import omit from 'omit.js'
 import Grid from './grid'
 
-import {Cell, Column, ColumnGroup} from 'fixed-data-table'
+import {Column, ColumnGroup} from 'fixed-data-table'
+import Cell from './cell'
 
 
 class DataGridComponent extends React.Component {
