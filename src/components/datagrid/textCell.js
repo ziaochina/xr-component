@@ -11,7 +11,7 @@ export default class textCellComponent extends Component{
           style,
           className,
           align,
-          format,
+          sand,
           value,
           dataType,
           precision,
@@ -49,8 +49,8 @@ export default class textCellComponent extends Component{
 
       value = value + ''
 
-      if(format){
-        value = format(value)
+      if(sand){
+        value = sand(value)
       }
 
       let ext = {}
