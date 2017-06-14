@@ -78,9 +78,8 @@ export default class textCellComponent extends Component{
       }
 
       if(enableEllipsis){
-        innerStyle = { ...innerStyle, whiteSpace:'nowrap',overflow:'hidden', textOverflow:'ellipsis'}
-        ext.title = value
-        value = [<span>{value}</span>,<span>...</span>]
+          ext.title = value
+          value = [<span style={{ whiteSpace:'nowrap',overflow:'hidden', textOverflow:'ellipsis'}}>{value}</span>]
       }
 
       return (
