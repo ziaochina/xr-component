@@ -1,6 +1,6 @@
 {
   "name": "xr-component",
-  "version": "0.1.105",
+  "version": "0.1.106",
   "description": "",
   "main": "./lib/index",
   "scripts": {
