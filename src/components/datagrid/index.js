@@ -6,7 +6,7 @@ import Grid from './grid'
 
 import {Column, ColumnGroup} from 'fixed-data-table'
 import Cell from './cell'
-import TextCell from './cell'
+import TextCell from './textCell'
 
 
 class DataGridComponent extends React.Component {
