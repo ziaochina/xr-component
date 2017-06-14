@@ -38,7 +38,7 @@
 	 * 默认状态字体色值：#454545
 	 * 当前状态色值：#3EABE8，加粗
 	 */
-	.public_fixedDataTable_header .public_fixedDataTableCell_main {
+	.public_fixedDataTable_header, .public_fixedDataTable_header .public_fixedDataTableCell_main {
 	    /* background-color: #f6f7f8; */
 	    /* background-image: -webkit-linear-gradient(#fff,#efefef); */
 	    //background-image: linear-gradient(#e6e6e7,#e6e6e7);
@@ -47,22 +47,8 @@
 	    font-size: 12px;
 	    font-weight: normal;
 	    border-bottom-width: 0px;
-
-	    /*label{
-	    	font-weight: normal;
-			margin-bottom: 0px; 
-	    }*/
 	}
 
-
-	.public_fixedDataTable_header, .public_fixedDataTable_header .public_fixedDataTableCell_main {
-	    background-color: #3EABE8;
-	    background-image: -webkit-linear-gradient(#3EABE8,#3EABE8);
-	    color:#fff;
-	    font-size: 12px;
-	    font-weight: normal;
-	    border-bottom-width: 0px;
-	}
 
 	.fixedDataTableRowLayout_rowWrapper:hover .public_fixedDataTableCell_main {
 	    background-color: #f3f9f0;
@@ -83,17 +69,13 @@
 
 
 
-	.public_fixedDataTable_main, .public_fixedDataTable_header, .public_fixedDataTable_hasBottomBorder {
-	    border-color: #e7e6e6;
-	}
+
 
 	.public_fixedDataTable_header{
 		border-top-color: #fff;
 	}
 
-	.public_fixedDataTableCell_main {
-		border-color: #e7e6e6;
-	}
+
 
 	.fixedDataTableRowLayout_fixedColumnsDivider {
 		border:0px
