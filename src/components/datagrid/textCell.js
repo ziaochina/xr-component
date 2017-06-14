@@ -2,21 +2,6 @@ import React, {Component} from 'react'
 import {Cell} from 'fixed-data-table'
 import classNames from 'classnames'
 
-const formatByThousand = (num)=>{
-    if (isNaN(num)) { 
-          return num
-    } 
-    return ("" + num).replace(/(\d{1,3})(?=(\d{3})+(?:$|\.))/g, "$1,");  
-}
-
-const replaceSpaceToNbsp = (text) =>{
-    return Array.from(text).map(o=>{
-       if(o=== ' '){
-          return React.createElement('&nbsp;')
-       }
-       return o
-    })
-}
 
 export default class textCellComponent extends Component{
   render(){
@@ -32,7 +17,6 @@ export default class textCellComponent extends Component{
           precision,
           enableTooltip,
           enableEllipsis,
-          transSpaceToNbsp,
           ...other
       } = this.props
 
@@ -63,16 +47,11 @@ export default class textCellComponent extends Component{
         value = ''
       }
 
-      if(format == 'thousand'){
-        value = formatByThousand(value)
-      }
-
       value = value + ''
 
-      if(transSpaceToNbsp){
-        value = replaceSpaceToNbsp(value)
+      if(format){
+        value = format(value)
       }
-
 
       let ext = {}
       if (enableTooltip) {

@@ -10,7 +10,7 @@ const dataSource = []
 for (let i = 0; i < 100; i++) {
 	dataSource.push({
 		code : `code${i}`,
-		name: `  name${i}`,
+		name: `  name${i}  fewfew`,
 		memo: '这是一个使用textCell的示例，鼠标移入到当前会有提示',
 	})
 }
@@ -33,7 +33,7 @@ const columns = [
 	<Column
 		columnKey='name'
 		header={<Cell>名称</Cell>}
-		cell={(ps)=><TextCell transSpaceToNbsp value={dataSource[ps.rowIndex].name} />}
+		cell={(ps)=><TextCell value={dataSource[ps.rowIndex].name} />}
 		footer={<Cell>footer</Cell>}
 		flexGrow={1}
 		width={200}
