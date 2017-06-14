@@ -16,6 +16,7 @@ export default class cellComponent extends Component{
 
     	let cls = classNames({
     		'xr-datagrid-cellContent':true,
+    		[`xr-datagrid-cellContent-${align}`]: !!align,
     		[className] : !!className
     	})
 
