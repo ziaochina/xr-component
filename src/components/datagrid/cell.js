@@ -9,13 +9,13 @@ export default class cellComponent extends Component{
 	      	width,
 	      	style,
 	      	className,
+	      	align,
 	      	children,
 	      	...other
     	} = this.props
 
     	let cls = classNames({
-    		'fixedDataTableCellLayout_wrap1':true,
-    		'public_fixedDataTableCell_wrap1':true,
+    		'xr-datagrid-cellContent':true,
     		[className] : !!className
     	})
 
@@ -27,13 +27,7 @@ export default class cellComponent extends Component{
 
     	return (
       		<div {...other} className={cls} style={innerStyle}>
-        		<div className={classNames('fixedDataTableCellLayout_wrap2','public_fixedDataTableCell_wrap2')}>
-          			<div className={classNames('fixedDataTableCellLayout_wrap3','public_fixedDataTableCell_wrap3')}>
-			            <div className='public-fixedDataTableCell-cellContent'>
-			              	{children}
-			            </div>
-          			</div>
-        		</div>
+              	{children}
       		</div>
     	)
 	}
