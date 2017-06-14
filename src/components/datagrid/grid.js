@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Table} from 'fixed-data-table'
-
+import SequenceColumn from './sequenceColumn'
 
 export default function GridComponent(props){
 	let {
@@ -15,7 +15,11 @@ export default function GridComponent(props){
 		height,
 		heightFromRowsCount,
 		readonly,
-		focusCell,
+		enableSequence,
+		startSequence,
+		enableAddDelrow,
+		onAddrow,
+		onDelrow,
 		onRowClick,
 		onRowDoubleClick,
 		onRowMouseEnter,
@@ -31,6 +35,15 @@ export default function GridComponent(props){
 	//高度根据行数计算
 	if(heightFromRowsCount){
  		height = headerHeight + 2 + rowHeight * rowsCount + footerHeight
+	}
+
+	if(enableSequence){
+		columns.splice(0,0, SequenceColumn({
+			startSequence,
+			enableAddDelrow: readonly === false ? enableAddDelrow : false,
+			onAddrow,
+			onDelrow
+		}))
 	}
 
 

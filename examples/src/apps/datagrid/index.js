@@ -40,3 +40,14 @@ export default class Demo extends Component{
 	}
 
 }
+
+/*<Example 
+			 		title = '示例一'
+			 		content={<Example1 />}
+			 		doc={example1Md} 
+				/>
+				<Example 
+			 		title = '示例二'
+			 		content={<Example2 />}
+			 		doc={example2Md} 
+				/>*/

@@ -100,7 +100,7 @@ export default class Example1 extends Component {
 
 	render() {
 		return (
-			<div style={{height:300, display:'flex'}}>
+			<div style={{height:300,width:'100%', display:'flex'}}>
 		 		<DataGrid
 		 			headerHeight={35}
 		 		    rowsCount={100}

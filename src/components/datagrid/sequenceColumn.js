@@ -2,8 +2,7 @@ import React from 'react'
 import { Table, Column, Cell } from 'fixed-data-table'
 import Icon from '../icon'
 
-export default function createSequenceColumn(props){
-	
+export default function SequenceColumn(props){
 	let {
 		enableSum, //启用合计
 		enableLink, //启用链接
