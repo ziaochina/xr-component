@@ -63,24 +63,29 @@ export default class textCellComponent extends Component{
         value = ''
       }
 
-      if(transSpaceToNbsp){
-        value = replaceSpaceToNbsp(value)
-      }
-
       if(format == 'thousand'){
         value = formatByThousand(value)
       }
 
       value = value + ''
+
+      if(transSpaceToNbsp){
+        value = replaceSpaceToNbsp(value)
+      }
+
+
       let ext = {}
       if (enableTooltip) {
         ext.title = value
       }
 
+
       if(enableEllipsis){
           ext.title = value
           value = [<span style={{ whiteSpace:'nowrap',overflow:'hidden', textOverflow:'ellipsis'}}>{value}</span>]
       }
+
+
 
       return (
           <div {...other} className={cls} style={innerStyle} {...ext}>
