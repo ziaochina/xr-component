@@ -10,7 +10,10 @@ const dataSource = []
 for (let i = 0; i < 100; i++) {
 	dataSource.push({
 		code : `code${i}`,
-		name: `name${i}`
+		name: `name${i}`,
+		memo: '这是一个使用textCell的示例，鼠标移入到当前会有提示',
+
+
 	})
 }
 
@@ -32,27 +35,35 @@ const columns = [
 	<Column
 		columnKey='name'
 		header={<Cell>名称</Cell>}
-		cell={(ps)=><TextCell>{dataSource[ps.rowIndex].name}</TextCell>}
+		cell={(ps)=><TextCell value={dataSource[ps.rowIndex].name} />}
 		footer={<Cell>footer</Cell>}
 		flexGrow={1}
 		width={200}
 	/>,
 	<Column
-		columnKey='ext1'
+		columnKey='memo'
+		header={<Cell>描述</Cell>}
+		cell={(ps)=><TextCell align='left' enableEllipsis value={dataSource[ps.rowIndex].memo} />}
+		footer={<Cell>footer</Cell>}
+		flexGrow={1}
+		width={200}
+	/>,
+	<Column
+		columnKey='单价'
 		header={<Cell>Ext1</Cell>}
 		cell={(ps)=><Cell>ext1</Cell>}
 		flexGrow={1}
 		width={400}
 	/>,
 	<Column
-		columnKey='ext2'
+		columnKey='数量'
 		header={<Cell>Ext2</Cell>}
 		cell={(ps)=><Cell>ext2</Cell>}
 		flexGrow={1}
 		width={400}
 	/>,
 	<Column
-		columnKey='ext3'
+		columnKey='金额'
 		header={<Cell>Ext3</Cell>}
 		cell={(ps)=><Cell>ext3</Cell>}
 		flexGrow={1}

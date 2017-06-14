@@ -38,9 +38,13 @@ export default class textCellComponent extends Component{
 
     	let cls = classNames({
     		  'xr-datagrid-cellContent':true,
-    		  [`xr-datagrid-cellContent-${align}`]: !!align,
     		  [className] : !!className
     	})
+
+      let innerCls = classNames({
+          'xr-datagrid-cellContent-text':true,
+          [`xr-datagrid-cellContent-text-${align}`] : !!align
+      })
 
       let innerStyle = {
   			  height,
@@ -83,8 +87,10 @@ export default class textCellComponent extends Component{
       }
 
     	return (
-      		<div {...other} className={cls} style={innerStyle} {...ext}>
-              {value}
+      		<div {...other} className={cls}  >
+              <div className={innerCls} style={innerStyle} {...ext}>
+                {value}
+              </div>
       		</div>
     	)
 	}
