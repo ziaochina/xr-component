@@ -12,7 +12,7 @@ const formatByThousand = (num)=>{
 const replaceSpaceToNbsp = (text) =>{
     return Array.from(text).map(o=>{
        if(o=== ' '){
-          return &nbsp;
+          return React.createElement('&nbsp;')
        }
        return o
     })
@@ -20,7 +20,7 @@ const replaceSpaceToNbsp = (text) =>{
 
 export default class textCellComponent extends Component{
 	render(){
-		  const {
+		  let {
       		height,
 	      	width,
 	      	style,
@@ -42,7 +42,7 @@ export default class textCellComponent extends Component{
     		  [className] : !!className
     	})
 
-      var innerStyle = {
+      let innerStyle = {
   			  height,
   			  width,
       		...style,
