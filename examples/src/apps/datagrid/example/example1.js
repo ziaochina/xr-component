@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import { DataGrid,Checkbox  } from 'xr-component'
+import { DataGrid,Checkbox,  Icon } from 'xr-component'
 
 const Column = DataGrid.Column
 const Cell = DataGrid.Cell
@@ -20,6 +20,13 @@ const columns = [
 		header={<Cell><Checkbox /></Cell>}
 		cell={(ps)=><Cell><Checkbox/></Cell>}
 		width={40}
+	/>,
+	<Column
+		columnKey='option'
+		fixed
+		header={<Cell>操作</Cell>}
+		cell={(ps)=><Cell ><Icon type='github' showStyle='showy' style={{marginRight:8}}/><Icon type='github' showStyle='softly'/></Cell>}
+		width={70}
 	/>,
 	<Column
 		columnKey='code'

@@ -25,7 +25,8 @@ class DataGridComponent extends React.Component {
         let dom = ReactDOM.findDOMNode(this),
             height = dom.offsetHeight,
             width = dom.offsetWidth
-
+        console.log('oldheight', this.state.height, 'oldwidth', this.state.width )
+        console.log('newheight', height, 'newwidth', width )
         if(height != this.state.height || width != this.state.width){
             this.setState({ height, width })
         }
@@ -73,7 +74,7 @@ class DataGridComponent extends React.Component {
     render() {
         let className = classNames({
             'xr-datagrid':true,
-            'xr-datagrid-editable': !this.props.readonly,
+            'xr-datagrid-editable': this.props.readonly === false,
             [this.props.className]: !!this.props.className,
         })
 

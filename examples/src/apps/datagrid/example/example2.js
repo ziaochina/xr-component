@@ -10,7 +10,7 @@ const dataSource = []
 for (let i = 0; i < 100; i++) {
 	dataSource.push({
 		code : `code${i}`,
-		name: `  name${i}  fewfew`,
+		name: `name${i}`,
 		memo: '这是一个使用textCell的示例，鼠标移入到当前会有提示',
 	})
 }
@@ -33,7 +33,7 @@ const columns = [
 	<Column
 		columnKey='name'
 		header={<Cell>名称</Cell>}
-		cell={(ps)=><TextCell value={dataSource[ps.rowIndex].name} />}
+		cell={(ps)=><TextCell align='left' value={dataSource[ps.rowIndex].name} sand={(v)=>[<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>, v]} />}
 		footer={<Cell>footer</Cell>}
 		flexGrow={1}
 		width={200}
@@ -49,30 +49,23 @@ const columns = [
 	<Column
 		columnKey='price'
 		header={<Cell>单价</Cell>}
-		cell={(ps)=><TextCell dataType='float' precision={2} enableTooltip value={432.116666666} />}
+		cell={(ps)=><TextCell dataType='float' align='right' style={{paddingRight:8}} precision={2} enableTooltip value={43243432.116666666} sand={(v)=>("" + v).replace(/(\d{1,3})(?=(\d{3})+(?:$|\.))/g, "$1,")} />}
 		flexGrow={1}
-		width={400}
+		width={200}
 	/>,
 	<Column
 		columnKey='bool'
 		header={<Cell>布尔</Cell>}
 		cell={(ps)=><TextCell dataType='bool' value={true} />}
 		flexGrow={1}
-		width={400}
+		width={200}
 	/>,
 	<Column
-		columnKey='Ext2'
-		header={<Cell>Ext2</Cell>}
-		cell={(ps)=><Cell>ext2</Cell>}
+		columnKey='custom'
+		header={<Cell>自定义</Cell>}
+		cell={(ps)=><div>自定义cell组件</div>}
 		flexGrow={1}
-		width={400}
-	/>,
-	<Column
-		columnKey='Ext3'
-		header={<Cell>Ext3</Cell>}
-		cell={(ps)=><Cell>ext3</Cell>}
-		flexGrow={1}
-		width={400}
+		width={200}
 	/>
 ]
 

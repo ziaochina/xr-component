@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Table} from 'fixed-data-table'
-import classNames from 'classnames'
+
 
 export default function GridComponent(props){
 	let {
@@ -46,10 +46,10 @@ export default function GridComponent(props){
 			height={height}
             scrollToRow = {scrollToRow}
             scrollToColumn ={scrollToColumn}
-            onRowDoubleClick={readonly ? onRowDoubleClick : undefined}
-			onRowClick={onRowClick}
-			onRowMouseEnter={onRowMouseEnter}
-			onRowMouseLeave={onRowMouseLeave}
+            onRowDoubleClick={readonly === false ? undefined : onRowDoubleClick }
+			onRowClick={readonly === false ? undefined : onRowClick}
+			onRowMouseEnter={readonly === false ? undefined : onRowMouseEnter}
+			onRowMouseLeave={readonly === false ? undefined : onRowMouseLeave}
             scrollEnd={onScrollEnd}
 		>
 			{columns}
