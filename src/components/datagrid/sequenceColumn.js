@@ -18,7 +18,7 @@ export default function SequenceColumn(props){
 	let getContent = (ps) => {
 
 		//序号列显示内容，如果有开始序号那么加上
-		let text = startSequence ? (startSequence + ps.rowIndex + 1) + '' : (ps.rowIndex + 1) + '' 
+		let text = startSequence ? (startSequence + ps.rowIndex ) + '' : (ps.rowIndex + 1) + '' 
 
 		//启用链接，会响应click事件
 		if (enableLink){

@@ -37,6 +37,7 @@ export default function GridComponent(props){
  		height = headerHeight + 2 + rowHeight * rowsCount + footerHeight
 	}
 
+	columns = [...columns]
 	if(enableSequence){
 		columns.splice(0,0, SequenceColumn({
 			startSequence,
