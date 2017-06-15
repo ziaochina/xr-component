@@ -18,6 +18,7 @@ export default function GridComponent(props){
 		enableSequence,
 		startSequence,
 		enableAddDelrow,
+		sequenceFooter,
 		onAddrow,
 		onDelrow,
 		onRowClick,
@@ -42,6 +43,7 @@ export default function GridComponent(props){
 		columns.splice(0,0, SequenceColumn({
 			startSequence,
 			enableAddDelrow: readonly === false ? enableAddDelrow : false,
+			footer:sequenceFooter,
 			onAddrow,
 			onDelrow
 		}))

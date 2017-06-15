@@ -3,19 +3,17 @@ import { Table, Column, Cell } from 'fixed-data-table'
 import Icon from '../icon'
 
 export default function SequenceColumn(props){
-	let {
-		enableSum, //启用合计
+	const {
 		enableLink, //启用链接
 		startSequence, //开始序号值
 		enableAddDelrow, //启用增删行功能
+		footer, //脚
 		onAddrow, //增行事件
 		onDelrow, //删行事件
 		onClick, //点击事件
 	} = props
 
-
-
-	let getContent = (ps) => {
+	const getContent = (ps) => {
 
 		//序号列显示内容，如果有开始序号那么加上
 		let text = startSequence ? (startSequence + ps.rowIndex ) + '' : (ps.rowIndex + 1) + '' 
@@ -33,7 +31,7 @@ export default function SequenceColumn(props){
 			)
 		}
 
-		return <div className='xr-datagrid-sequence-cell' onClick={onClick?()=>onClick(ps):undefined}>
+		return <div className='xr-datagrid-sequence-cell'>
 			{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={(ps) => onAddrow? onAddrow(ps):undefined}/>:null}
 				<a style={{color:"#444444", cursor:"default"}}>
 					{text}
@@ -53,10 +51,7 @@ export default function SequenceColumn(props){
 			header = {
 				<Cell>序号</Cell>
 			}
-
-			footer={enableSum ? (
-				<Cell style={{ fontWeight: 'bold' }}>合计</Cell>) : undefined
-			}
+			footer={footer}
 		/>
 	)
 

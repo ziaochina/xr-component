@@ -7,8 +7,6 @@ const Cell = DataGrid.Cell
 const TextCell = DataGrid.TextCell
 
 export default class Example1 extends Component {
-
-
 	constructor(props){
 		super(props)
 
@@ -26,7 +24,8 @@ export default class Example1 extends Component {
 
 		this.isFocusCell = this.isFocusCell.bind(this)
 		this.handleCellClick = this.handleCellClick.bind(this) 
-		//this.handleAddrow = this.handleAddrow.bind(this)
+		this.handleAddrow = this.handleAddrow.bind(this)
+		this.handleDelrow = this.handleDelrow.bind(this)
 
 	}
 
@@ -65,7 +64,9 @@ export default class Example1 extends Component {
 	}
 
 	handleDelrow(ps){
-
+		const dataSource = this.state.dataSource
+		dataSource.splice(ps.rowIndex, 1)
+		this.setState({dataSource})
 	}
 
 	getColumns(){
@@ -118,7 +119,7 @@ export default class Example1 extends Component {
 			<div style={{height:300,width:'100%', display:'flex'}}>
 		 		<DataGrid
 		 			headerHeight={50}
-		 		    rowsCount={2}
+		 		    rowsCount={this.state.dataSource.length}
         			rowHeight={50}
         			footerHeight={50}
         			readonly={false}
