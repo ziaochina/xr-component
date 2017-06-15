@@ -102,10 +102,10 @@ export default class Example1 extends Component {
 		return (
 			<div style={{height:300,width:'100%', display:'flex'}}>
 		 		<DataGrid
-		 			headerHeight={35}
+		 			headerHeight={50}
 		 		    rowsCount={100}
-        			rowHeight={35}
-        			footerHeight={35}
+        			rowHeight={50}
+        			footerHeight={50}
         			readonly={false}
         			enableSequence={true}
         			enableAddDelrow={true}
