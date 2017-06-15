@@ -6,10 +6,10 @@ export default class Example1 extends Component {
 	render() {
 		return (
 			<Form position='horizontal'>
-				<FormItem label="用户名">
+				<FormItem label="用户名" >
 					<Input />
 				</FormItem>
-				<FormItem label="密码">
+				<FormItem label="密码" >
 					<Input type='password'/>
 				</FormItem>
 		  	</Form>
