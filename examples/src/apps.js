@@ -10,6 +10,11 @@ export default function requireApp(path, cb) {
     	cb(require('./apps/about/index'))
     }
 
+    else if(path === 'apps/start'){
+        cb(require('./apps/start/index'))
+    }
+
+
     else if(path === 'apps/menu'){
     	cb(require('./apps/menu/index'))
     }

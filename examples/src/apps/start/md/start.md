@@ -1,4 +1,4 @@
-# xr-component
+# 开始使用
 
 - 1、npm install xr-component --save
 
