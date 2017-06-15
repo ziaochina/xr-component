@@ -1,4 +1,5 @@
 ```javascript
+//当前例子没厨房，他针对的滚动栏貌似是body上，我overflow设置hidden所以没效果
 import React,{Component} from 'react'
 import { Anchor  } from 'xr-component'
 

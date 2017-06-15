@@ -12,7 +12,7 @@ export default class Example extends Component {
 			<Card title={this.props.title} style={{overflow:'visible'}} className='example-template'>
 				<Collapse bordered={false} defaultActiveKey={['1']} style={{overflow:'visible'}}>
 					<Panel header={<a>效果</a>} key="1" style={{overflow:'visible'}}>
-						<div className='example-content'>{this.props.content}</div>
+						<div className='example-content'>{React.cloneElement(this.props.content, this.props)}</div>
 					</Panel>
 				 	<Panel header={<a>代码</a>} key="2">
 				 		{Markdown({content:this.props.doc})}

@@ -11,7 +11,7 @@ import readmeMd from './md/readme.md'
 export default class Demo extends Component{
 	render(){
 		return (
-			<div>
+			<div >
 				<Example 
 			 		title = '示例一'
 			 		content={<Example1 />}
