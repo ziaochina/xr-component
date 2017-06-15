@@ -51,7 +51,7 @@ export default class Example1 extends Component {
 	render() {
 		return (
 			<div>
-		 		<Table columns={columns} dataSource={data} />
+		 		<Table bordered columns={columns} dataSource={data} />
 		  	</div>
 		)
 	}

@@ -1,6 +1,11 @@
 .xr-table {
     height: 100%;
     overflow: hidden;
+
+    table{
+     	border-radius: 0px;
+    }
+
     .ant-table-thead > tr > th {
         background-color: #3EABE8;
         color: #fff;
@@ -10,7 +15,7 @@
         padding: 6px 8px;
     }
 
-    .ant-table-body {
+    .ant-table-tbody{
         background: #fff;
         td {
             padding: 6px 8px;
@@ -27,6 +32,9 @@
         }
         tr:hover {
             background: #f3f9f0;
+        }
+        tr:last-child{
+        	border-bottom: 1;
         }
     }
 }
