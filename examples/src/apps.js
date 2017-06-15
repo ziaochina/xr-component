@@ -186,4 +186,8 @@ export default function requireApp(path, cb) {
     else if(path === 'apps/table'){
         cb(require('./apps/table/index'))
     }
+
+    else if(path === 'apps/form'){
+        cb(require('./apps/form/index'))
+    }
 }
