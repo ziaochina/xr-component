@@ -42,6 +42,7 @@ import DropdownComponent from './components/dropdown'
 import EchartsComponent from './components/echarts'
 import DataGridComponent from  './components/datagrid'
 import TableComponent from './components/table'
+import FormComponent from './components/Form'
 
 export const Menu = MenuComponent
 export const Icon = IconComponent
@@ -87,3 +88,4 @@ export const Dropdown = DropdownComponent
 export const Echarts = EchartsComponent
 export const DataGrid = DataGridComponent
 export const Table = TableComponent
+export const Form = FormComponent

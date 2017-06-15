@@ -21,7 +21,7 @@ export default class RootComponent extends Component{
     }
 
 	render(){
-		let currentAppPath = this.props.payload.get('currentAppPath')
+		let currentAppPath = this.props.payload.get('currentAppPath') || 'apps/about'
 		return(
 			<div className='app-root'>
 				<div className='app-root-header'>
@@ -37,7 +37,7 @@ export default class RootComponent extends Component{
 						{this.getMenu()}
 					</div>
 					<div className='app-root-content-main' id='main'>
-						{currentAppPath?<AppLoader path={currentAppPath} /> : null}
+						{currentAppPath?<AppLoader path={currentAppPath } /> : null}
 					</div>
 				</div>
 				
@@ -47,7 +47,7 @@ export default class RootComponent extends Component{
 
 	getMenu(){
 		return (
-			<Menu theme='dark' mode="inline" defaultOpenKeys={['components']} onClick={::this.handleMenuClick}>
+			<Menu theme='dark' mode="inline" defaultSelectedKeys={['about']} defaultOpenKeys={['components']} onClick={::this.handleMenuClick}>
 			 	<Menu.Item key="about" >关于</Menu.Item>
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
