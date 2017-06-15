@@ -32,7 +32,7 @@ export default class Demo extends Component{
 				<Example 
 			 		title = '示例三'
 			 		content={<Example3 />}
-			 		doc={example2Md} 
+			 		doc={example3Md} 
 				/>
 				{Markdown({content:readmeMd})}
 			</div>

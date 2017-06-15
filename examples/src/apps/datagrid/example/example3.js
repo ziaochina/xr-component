@@ -6,7 +6,7 @@ const Column = DataGrid.Column
 const Cell = DataGrid.Cell
 const TextCell = DataGrid.TextCell
 
-export default class Example1 extends Component {
+export default class Example3 extends Component {
 	constructor(props){
 		super(props)
 
@@ -126,6 +126,7 @@ export default class Example1 extends Component {
         			enableSequence={true}
         			enableAddDelrow={true}
         			startSequence={1}
+        			sequenceFooter={<Cell>footer</Cell>}
         			onAddrow={this.handleAddrow}
         			onDelrow={this.handleDelrow}
         			columns = {this.getColumns()}

@@ -25,8 +25,6 @@ export default function GridComponent(props){
 		onRowDoubleClick,
 		onRowMouseEnter,
 		onRowMouseLeave,
-		onCellEnter,
-		onCellLeave,
 		onScrollEnd,
 		scrollToRow,
 		scrollToColumn,
