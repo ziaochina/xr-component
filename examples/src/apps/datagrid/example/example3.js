@@ -107,6 +107,11 @@ export default class Example1 extends Component {
         			rowHeight={35}
         			footerHeight={35}
         			readonly={false}
+        			enableSequence={true}
+        			enableAddDelrow={true}
+        			startSequence={1}
+        			onAddrow={()=>{}}
+        			onDelrow={()=>{}}
         			columns = {this.getColumns()}
     			/>
 		  	</div>

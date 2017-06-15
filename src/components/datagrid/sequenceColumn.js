@@ -23,22 +23,22 @@ export default function SequenceColumn(props){
 		//启用链接，会响应click事件
 		if (enableLink){
 			return (
-				<Cell onClick={()=>onClick(ps)}>
-					{enableAddDelrow?<Icon type="plus" className='add-row' onClick={onAddrow(ps)} />:null}
+				<Cell onClick={onClick?()=>onClick(ps):undefined}>
+					{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={onAddrow(ps)} />:null}
 					<a>
 						{text}
 					</a>
-					{enableAddDelrow?<Icon type="close" className='remove-row' onClick={onDelrow(ps)}/>:null}
+					{enableAddDelrow?<Icon type="close" className='xr-datagrid-editable-remove-row' onClick={onDelrow(ps)}/>:null}
 				</Cell>
 			)
 		}
 
-		return <Cell onClick={()=>onClick(ps)}>
-			{enableAddDelrow?<Icon type="plus" className='add-row' onClick={onAddrow(ps)}/>:null}
+		return <Cell onClick={onClick?()=>onClick(ps):undefined}>
+			{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={onAddrow(ps)}/>:null}
 				<a style={{color:"#444444", cursor:"default"}}>
 					{text}
 				</a>
-			{enableAddDelrow?<Icon type="close" className='remove-row' onClick={onDelrow(ps)}/>:null}
+			{enableAddDelrow?<Icon type="close" className='xr-datagrid-editable-remove-row' onClick={onDelrow(ps)}/>:null}
 		</Cell>
 	}
 

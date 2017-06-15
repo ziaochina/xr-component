@@ -88,5 +88,58 @@
 
 
 
+//可编辑特殊样式
+.xr-datagrid-editable {
+
+    background-color: #fff;
+
+    &-add-row{
+        display:none;
+        font-size:16px;
+        color: #FEA728;
+        &:hover{
+            cursor: pointer;
+            color: #ee8d00;
+        }
+    }
+
+    &-remove-row{
+        display:none;
+        font-size:16px;
+        color: #88CC48;
+        &:hover{
+            cursor: pointer;
+            color: #6bbb20;
+        }
+    }
+
+    .fixedDataTableLayout_main,
+    public_fixedDataTable_main {
+        .fixedDataTableLayout_rowsContainer > div:nth-child(3) > div:hover {
+            .fixedDataTableRowLayout_body {
+                .fixedDataTableCellGroupLayout_cellGroupWrapper:first-child {
+                    .fixedDataTableCellGroupLayout_cellGroup > div:first-child {
+                        .public_fixedDataTableCell_cellContent {
+                            
+                            display: flex;
+                            justify-content: space-around;
+                            a {
+                                display: none;
+                            }
+                            .anticon {
+                                font-size: 16px;
+                                display:block!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+}
+
+
+
 
 
