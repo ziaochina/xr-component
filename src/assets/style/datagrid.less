@@ -75,6 +75,11 @@
     .fixedDataTableRowLayout_fixedColumnsDivider {
         border: 0px
     }
+
+    // 兼容ie11上表格的表頭是白色的缺陷
+	.fixedDataTableLayout_rowsContainer .fixedDataTableRowLayout_rowWrapper .public_fixedDataTable_header{
+		background: #3EABE8;
+	}
 }
 
 //可编辑特殊样式

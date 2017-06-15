@@ -68,6 +68,7 @@ export default class RootComponent extends Component{
 		            <Menu.Item key="upload">Upload 上传</Menu.Item>
 		            <Menu.Item key="transfer">Transfer 穿梭框</Menu.Item>
 		            <Menu.Item key="datagrid">DataGrid 数据网格</Menu.Item>
+		            <Menu.Item key="table">Table 表格</Menu.Item>
 		        	<Menu.Item key="menu">Menu 菜单</Menu.Item>
 		        	<Menu.Item key="card">Card 卡片</Menu.Item>
 		        	<Menu.Item key="collapse">Collapse 折叠面板</Menu.Item>
