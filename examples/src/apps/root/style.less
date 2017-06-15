@@ -1,4 +1,7 @@
 .app-root{
+	overflow:hidden;
+	width: 100%;
+	height: 100%;
 	display:flex;
 	flex-direction: column;
 	background-color:#ececec;
@@ -9,7 +12,7 @@
 		padding:0px 24px 0px 24px;
 		flex:0 0 54px;
 		height:54px;
-		background-color: #24292e;
+		background-color: #333;
 		color:#fff;
 		&-left{
 			flex:1
@@ -30,18 +33,19 @@
 		display:flex;
 		flex-direction: row;
 		flex: 1 1 auto;
-		padding:24px 48px 24px 48px;
-
+		//padding:24px 48px 24px 48px;
 
 		&-left{
-			height:100%;
 			width:250px;
+			overflow:auto;
+			flex: 0 0 auto;
 		}
 
 		&-main{
 			flex: 1 1 auto;
 			background-color:#fff;
 			padding:20px;
+			overflow:auto;
 		}
 	}
 }

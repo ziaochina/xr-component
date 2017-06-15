@@ -47,7 +47,7 @@ export default class RootComponent extends Component{
 
 	getMenu(){
 		return (
-			<Menu  mode="inline" defaultOpenKeys={['components']} onClick={::this.handleMenuClick}>
+			<Menu theme='dark' mode="inline" defaultOpenKeys={['components']} onClick={::this.handleMenuClick}>
 			 	<Menu.Item key="about" >关于</Menu.Item>
 			 	<Menu.Item key="start" >开始使用</Menu.Item>
 		        <SubMenu key="components" title="组件">
