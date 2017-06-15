@@ -17,7 +17,7 @@ export default class Example1 extends Component {
 			dataSource: []
 		}
 
-		for (let i = 0; i < 100; i++) {
+		for (let i = 0; i < 2; i++) {
 			this.state.dataSource.push({
 				code : `code${i}`,
 				name: `name${i}`,
@@ -26,6 +26,7 @@ export default class Example1 extends Component {
 
 		this.isFocusCell = this.isFocusCell.bind(this)
 		this.handleCellClick = this.handleCellClick.bind(this) 
+		//this.handleAddrow = this.handleAddrow.bind(this)
 
 	}
 
@@ -51,6 +52,20 @@ export default class Example1 extends Component {
 			dataSource[ps.rowIndex][columnKey] = e.target.value
 			this.setState({dataSource})
 		}
+	}
+
+	handleAddrow(ps){
+		const dataSource = this.state.dataSource
+		dataSource.push({
+			code:`code${dataSource.length}`,
+			name:`name${dataSource.length}`,
+		})
+
+		this.setState({dataSource})
+	}
+
+	handleDelrow(ps){
+
 	}
 
 	getColumns(){
@@ -103,15 +118,15 @@ export default class Example1 extends Component {
 			<div style={{height:300,width:'100%', display:'flex'}}>
 		 		<DataGrid
 		 			headerHeight={50}
-		 		    rowsCount={100}
+		 		    rowsCount={2}
         			rowHeight={50}
         			footerHeight={50}
         			readonly={false}
         			enableSequence={true}
         			enableAddDelrow={true}
         			startSequence={1}
-        			onAddrow={()=>{}}
-        			onDelrow={()=>{}}
+        			onAddrow={this.handleAddrow}
+        			onDelrow={this.handleDelrow}
         			columns = {this.getColumns()}
     			/>
 		  	</div>

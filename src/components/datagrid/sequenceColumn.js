@@ -24,21 +24,21 @@ export default function SequenceColumn(props){
 		if (enableLink){
 			return (
 				<div className='xr-datagrid-sequence-cell' onClick={onClick?()=>onClick(ps):undefined}>
-					{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={onAddrow(ps)} />:null}
+					{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={(ps) => onAddrow?onAddrow(ps):undefined} />:null}
 					<a>
 						{text}
 					</a>
-					{enableAddDelrow?<Icon type="close" className='xr-datagrid-editable-remove-row' onClick={onDelrow(ps)}/>:null}
+					{enableAddDelrow?<Icon type="close" className='xr-datagrid-editable-remove-row' onClick={(ps) =>onDelrow? onDelrow(ps):undefined}/>:null}
 				</div>
 			)
 		}
 
 		return <div className='xr-datagrid-sequence-cell' onClick={onClick?()=>onClick(ps):undefined}>
-			{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={onAddrow(ps)}/>:null}
+			{enableAddDelrow?<Icon type="plus" className='xr-datagrid-editable-add-row' onClick={(ps) => onAddrow? onAddrow(ps):undefined}/>:null}
 				<a style={{color:"#444444", cursor:"default"}}>
 					{text}
 				</a>
-			{enableAddDelrow?<Icon type="close" className='xr-datagrid-editable-remove-row' onClick={onDelrow(ps)}/>:null}
+			{enableAddDelrow?<Icon type="close" className='xr-datagrid-editable-remove-row' onClick={(ps) => onDelrow? onDelrow(ps):undefined}/>:null}
 		</div>
 	}
 
