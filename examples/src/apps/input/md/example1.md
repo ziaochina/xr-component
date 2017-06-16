@@ -12,6 +12,9 @@ export default class Example1 extends Component {
 		 		<Input placeholder="Basic usage" />
 		 		<br/>
 		 		<br/>
+		 		<Input placeholder="regex" type='text' pattern="[a-z]*" />
+		 		<br/>
+		 		<br/>
 		 		<Search
     				placeholder="input search text"
     				style={{ width: 200 }}
