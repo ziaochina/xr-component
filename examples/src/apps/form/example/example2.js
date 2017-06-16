@@ -1,18 +1,30 @@
 import React,{Component} from 'react'
-import { Form,Input } from 'xr-component'
+import { Form,Input, Icon, Button } from 'xr-component'
 const FormItem = Form.Item
 
 export default class Example1 extends Component {
 	render() {
 		return (
-			<Form position='horizontal'>
-				<FormItem label="用户名" labelCol={{style:{width:100}}}>
-					<Input />
-				</FormItem>
-				<FormItem label="密码" labelCol={{style:{width:100}}}>
-					<Input type='password'/>
-				</FormItem>
-		  	</Form>
+			<Form layout="horizontal">
+		        <FormItem
+		          validateStatus='error' 
+		          help= 'error'
+		          hasFeedback
+		          wrapperCol={{style:{marginRight:20}}}
+		        >
+		            <Input prefix={<Icon type="user" style={{ fontSize: 13 }} />} placeholder="Username" />
+		        </FormItem>
+		        <FormItem wrapperCol={{style:{marginRight:20}}} >
+		            <Input prefix={<Icon type="lock" style={{ fontSize: 13 }} />} type="password" placeholder="Password" />
+		        </FormItem>
+		        <FormItem>
+		          <Button
+		            type="primary"
+		          >
+		            Log in
+		          </Button>
+		        </FormItem>
+      		</Form>
 		)
 	}
 }
