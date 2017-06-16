@@ -5,8 +5,8 @@ import FormItem from './formItem'
 function FormComponent(props){
 	let className = classNames({
 		'xr-form':true,
-		'xr-form-horizontal':props.position =='horizontal',
-		'xr-form-vertical': props.position =='vertical',
+		'xr-form-horizontal':props.layout =='horizontal',
+		'xr-form-vertical': props.layout =='vertical',
 		[props.className]: !!props.className
 	})
 
