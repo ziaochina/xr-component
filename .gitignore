@@ -9,3 +9,4 @@ node_modules
 .dist
 .vscode
 jsconfig.json
+package-lock.json
