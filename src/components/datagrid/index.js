@@ -4,15 +4,18 @@ import classNames from 'classnames'
 import omit from 'omit.js'
 import Grid from './grid'
 
-import {Column, ColumnGroup} from 'fixed-data-table'
+import {
+    Column,
+    ColumnGroup
+} from 'fixed-data-table'
 import Cell from './cell'
 import TextCell from './textCell'
 
 
 class DataGridComponent extends React.Component {
     state = {
-        height:0,
-        width:0
+        height: 0,
+        width: 0
     }
 
     constructor(props) {
@@ -21,12 +24,15 @@ class DataGridComponent extends React.Component {
         this.update = this.update.bind(this)
     }
 
-    componentDidUpdate(prevProps, prevState){
+    componentDidUpdate(prevProps, prevState) {
         let dom = ReactDOM.findDOMNode(this),
             height = dom.offsetHeight,
             width = dom.offsetWidth
-        if(height != this.state.height || width != this.state.width){
-            this.setState({ height, width })
+        if (height != this.state.height || width != this.state.width) {
+            this.setState({
+                height,
+                width
+            })
         }
     }
 
@@ -58,8 +64,11 @@ class DataGridComponent extends React.Component {
         this.refreshSize()
     }
 
-    refreshSize(){
-        this.setState({height:0, width:0})
+    refreshSize() {
+        this.setState({
+            height: 0,
+            width: 0
+        })
     }
 
     update() {
@@ -67,16 +76,19 @@ class DataGridComponent extends React.Component {
             height = dom.clientHeight,
             width = dom.clientWidth
 
-        this.setState({ height, width})
+        this.setState({
+            height,
+            width
+        })
     }
     render() {
         let className = classNames({
-            'xr-datagrid':true,
+            'xr-datagrid': true,
             'xr-datagrid-editable': this.props.readonly === false,
             [this.props.className]: !!this.props.className,
         })
 
-        return ( 
+        return (
             <div className = {className} 
                 onKeyDown={this.props.onKeyDown}
                 onKeyUp ={this.props.onKeyUp}> 
@@ -85,7 +97,7 @@ class DataGridComponent extends React.Component {
                     width: this.state.width,
                     height: this.state.height
                 })} 
-            </div> 
+            </div>
         )
     }
 }
@@ -96,4 +108,3 @@ DataGridComponent.Column = Column
 DataGridComponent.ColumnGroup = ColumnGroup
 
 export default DataGridComponent
-
