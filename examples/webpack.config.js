@@ -5,7 +5,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const marked = require("marked")
 const renderer = new marked.Renderer()
 
-console.log("ddddddddddddddddddddddddd",process.env.COMPRESS)
 var plugins = [
     new webpack.DefinePlugin({
         "process.env.NODE_ENV": JSON.stringify('production')
