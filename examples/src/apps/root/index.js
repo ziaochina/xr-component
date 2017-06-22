@@ -37,7 +37,7 @@ export default class RootComponent extends Component{
 						{this.getMenu()}
 					</div>
 					<div className='app-root-content-main' id='main'>
-						{currentAppPath?<AppLoader path={currentAppPath } /> : null}
+						{currentAppPath?<AppLoader name={currentAppPath } /> : null}
 					</div>
 				</div>
 				

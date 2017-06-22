@@ -5,12 +5,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const marked = require("marked")
 const renderer = new marked.Renderer()
 
+console.log("ddddddddddddddddddddddddd",process.env.COMPRESS)
 var plugins = [
     new webpack.DefinePlugin({
         "process.env.NODE_ENV": JSON.stringify('production')
     })
 ]
-
 
 if (process.env.COMPRESS) {
     plugins.push(
@@ -22,6 +22,8 @@ if (process.env.COMPRESS) {
     );
 }
 
+plugins.push(new webpack.optimize.CommonsChunkPlugin('vendor'))
+
 
 plugins.push(new HtmlWebpackPlugin({
     filename: './index.html', //生成的html存放路径，相对于 path
@@ -30,12 +32,16 @@ plugins.push(new HtmlWebpackPlugin({
 }))
 
 module.exports = {
-    devtool: 'source-map',
-    entry: ["./src/index.js"],
+    //devtool: 'source-map',
+    entry:{
+        bundle: ["./src/index.js"],
+        vendor: ["react", 'react-dom', 'xr-app-loader', 'xr-component', 'marked']
+    } ,
 
     output: {
         path: path.join(__dirname, "/dist/"),
-        filename: '[name].[hash:8].bundle.js'
+        filename: '[name].[hash:8].bundle.js',
+        chunkFilename: '[name].[hash:8].chunk.js'
     },
 
     resolve: {
